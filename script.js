@@ -5,16 +5,14 @@ var lockSetTime = false;
 var lockSpinColors = false;
 
 function startPage() {
-    setTime();
-    setInterval(setTime, 1000);
+    GetModifiedDate();
     setInterval(spinColors, 100);
 }
 
-function setTime() {
-
-    let myTime = new Date();
+function GetModifiedDate() {
+    let modifiedDate = new Date(Date.parse(document.lastModified));
     let output = "Last Update: " +
-        myTime.toLocaleString("en-US", {
+        modifiedDate.toLocaleString("en-US", {
             month: "2-digit", day: "2-digit",
             year: "numeric", hour: "2-digit",
             minute: "2-digit", second: "2-digit"
