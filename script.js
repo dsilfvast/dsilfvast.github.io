@@ -18,6 +18,7 @@ function GetModifiedDate() {
             minute: "2-digit", second: "2-digit"
         });
 
+    document.getElementById("year").innerHTML = modifiedDate.getFullYear();
     document.getElementById("dateTime").innerHTML = output;
 }
 
