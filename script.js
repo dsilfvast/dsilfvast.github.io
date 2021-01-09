@@ -1,8 +1,6 @@
 // JavaScript source code
 var rotation = 180;
 var step = 2;
-var lockSetTime = false;
-var lockSpinColors = false;
 
 function startPage() {
     GetModifiedDate();
