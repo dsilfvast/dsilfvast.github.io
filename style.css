@@ -9,7 +9,7 @@ body {
     max-width: 670px;
     margin: 0 auto;
     margin-top: 50px;
-    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    font-family: 'ZCOOL QingKe HuangYou', Arial, cursive;
     font-kerning: none;
 }
 header, footer {
@@ -26,7 +26,7 @@ h1{
 ul {
     font-size: 1em;
     color: #707070;
-    font-family: 'Maitree', serif;
+    font-family: 'Maitree', sans-serif, serif;
 }
 a{
     color: #0000FF;
