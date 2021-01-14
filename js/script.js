@@ -1,6 +1,6 @@
 // JavaScript source code
 var rotation = 180;
-var step = 2;
+var step = 1;
 
 function startPage() {
     GetModifiedDate();
@@ -21,8 +21,8 @@ function GetModifiedDate() {
 }
 
 function spinColors() {
-    if (rotation >= 185) step = -2;
-    if (rotation <= 175) step = 2;
+    if (rotation >= 185) step = -1;
+    if (rotation <= 175) step = 1;
     rotation += step;
 
     let degrees = rotation.toString() + "deg, ";

@@ -1,0 +1,98 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap');
+/* font-family: 'ZCOOL QingKe HuangYou', cursive;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap');
+/* font-family: 'Baloo Paaji 2', cursive; */
+
+body {
+    margin: 0 auto;
+    margin-top: 50px;
+    font-family: 'Baloo Paaji 2', Arial, cursive;
+
+    font-kerning: none;
+}
+
+main{
+    margin: 50px;
+    display:grid;
+    grid-template-columns: 1fr;
+    text-align:center;
+    grid-gap:25px;
+
+}
+
+header, footer {
+    background-image: linear-gradient(90deg, #00A0FF, #00FFA0);
+    border-radius: 8px;
+    padding: 6px;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'ZCOOL QingKe HuangYou', Arial, cursive;
+    font-size: 3em;
+    padding: 0px;
+    line-height: 0px;
+}
+
+h3 {
+    color: #FFFFFF;
+    line-height: 0px;
+    text-align:left;
+    padding-left:15px;
+}
+
+h4 {
+    line-height: 0px;
+    text-align: left;
+    padding-left: 15px;
+}
+
+a {
+    line-height: 0px;
+    text-align: left;
+    padding-left: 15px;
+}
+
+#dateTime {
+    line-height: 25px;
+    color: #006000;
+}
+
+main div {
+    background-color: #38485b;
+    width: 330px;
+    border: solid;
+    border-width: 1px;
+    border-color: #000000;
+    border-radius: 20px;
+}
+
+main div div{
+    width: 328px;
+    background-color: #d0d0d0;
+    border-radius: 0px 0px 20px 20px;
+    text-align:left; 
+}
+
+p {
+    padding: 30px;
+}
+
+img{
+    padding:4px;
+}
+
+
+
+@media (min-width: 800px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1200px) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

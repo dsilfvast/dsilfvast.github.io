@@ -1,9 +1,11 @@
 ﻿
-@import url('https://fonts.googleapis.com/css2?family=Maitree&display=swap');
-/* font-family: 'Maitree', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap');
+/* font-family: 'Baloo Paaji 2', cursive; */
 
 @import url('https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap');
 /* font-family: 'ZCOOL QingKe HuangYou', cursive;*/
+
+
 
 body {
     max-width: 670px;
@@ -26,7 +28,7 @@ h1{
 ul {
     font-size: 1em;
     color: #707070;
-    font-family: 'Maitree', sans-serif, serif;
+    font-family: 'Baloo Paaji 2', cursive;
 }
 a{
     color: #0000FF;
@@ -52,4 +54,10 @@ a:visited {
 #dateTime{
     line-height: 25px;
     color: #006000;
+}
+
+@media (max-width: 600px) {
+}
+
+@media (min-width: 601px) {
 }
