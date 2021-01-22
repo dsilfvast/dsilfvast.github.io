@@ -1,16 +1,22 @@
 ﻿
 @media only screen and (min-width: 37.5em) {
     nav ul {
+        /*
         display: grid;
         grid-template-columns: max-content max-content max-content max-content;
+        */
+        display: flex;
         font-size: 18px;
         padding-bottom: 5px;
-
+        padding-right: 25px;
+        padding-left: 25px;
     }
-    li {
-        padding: 0px;
-        grid-gap: 2em;
-        margin-right: 0px;
+    nav ul li {
+        flex: 1 1 100%;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    /*  grid-gap: 2em;*/
+        text-align: center;
     }
     li a{
         padding:15px;

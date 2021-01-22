@@ -3,8 +3,11 @@
     "",
     "\\css",
     "\\images",
-    "\\js"
+    "\\js",
+    "\\skyblips",
+    "\\skyblips\\js",
+    "\\skyblips\\siteplan"
   ],
-  "SelectedNode": "\\design-principles.html",
+  "SelectedNode": "\\skyblips\\js\\script.js",
   "PreviewInSolutionExplorer": false
 }
