@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
+    "\\css",
+    "\\images",
     "\\js"
   ],
-  "SelectedNode": "\\js\\script.js",
+  "SelectedNode": "\\design-principles.html",
   "PreviewInSolutionExplorer": false
 }
