@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/small.css">
     <link rel="stylesheet" href="../css/large.css">
+    <script src="../js/script.js"></script>
 </head>
-<body>
+<body onload="startPage()">
     <header>
         <h1>Sky Blips - Weather&nbsp;Site&nbsp;Plan</h1>
         <nav>
@@ -24,10 +25,12 @@
     <main>
         <div>
             <h2>Site Purpose</h2>
-            <p class="top-flat">The intended goal for this site is to provide detailed weather
-            forecasts and information for Preston, Soda Springs, and Fish Haven. Local media
-            and news postings will also be available for those interested in community events
-            and activities.</p>
+            <p class="top-flat">
+                The intended goal for this site is to provide detailed weather
+                forecasts and information for Preston, Soda Springs, and Fish Haven. Local media
+                and news postings will also be available for those interested in community events
+                and activities.
+            </p>
         </div>
         <div>
             <h2>Domain Availablity</h2>
@@ -41,7 +44,8 @@
         </div>
     </main>
     <footer>
-
+        &copy;<span id="year"></span> | <a href="../../index.html">Dustin Silfvast</a> | Utah | <a href="https://www.byui.edu/online" target="_blank">BYUI Online Learning</a><br />
+        <span id="dateTime">Last Updated:</span>
     </footer>
 </body>
 </html>
