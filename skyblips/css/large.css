@@ -1,0 +1,32 @@
+﻿
+@media only screen and (min-width: 37.5em) {
+    nav ul {
+        display: grid;
+        grid-template-columns: max-content max-content max-content max-content;
+        font-size: 18px;
+        padding-bottom: 5px;
+
+    }
+    li {
+        padding: 0px;
+        grid-gap: 2em;
+        margin-right: 0px;
+    }
+    li a{
+        padding:15px;
+        margin:0px;
+    }
+    .active {
+        background-color: #d8d8d8;
+        border-radius: 0px 0px 25px 25px;
+    }
+
+    .profile {
+        display: grid;
+        grid-template-columns: 230px 1fr;
+    }
+    .typegrid {
+        display: grid;
+        grid-template-columns: 180px 160px 70px 1fr;
+    }
+}
