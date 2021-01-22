@@ -1,5 +1,5 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
-
+﻿/*@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
 body {
     max-width: 800px;
     margin: 0 auto;
@@ -81,6 +81,8 @@ footer {
     border-radius: 0px 25px 25px 0px;
     text-align: center;
     margin-top: 20px;
+    font-size: 16px;
+    padding: 8px;
 }
 
 
@@ -168,7 +170,7 @@ main div div p {
 }
 .footer-font-size {
     font-size: 16px;
-    font-family: 'Merriweather', "Times New Roman", serif;
+    font-family: "Times New Roman", Times, serif;
 }
 .h1-font-size {
     font-size: 32px;
