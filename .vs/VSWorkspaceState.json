@@ -4,10 +4,12 @@
     "\\css",
     "\\images",
     "\\js",
+    "\\lesson4",
+    "\\lesson4\\js",
     "\\skyblips",
     "\\skyblips\\js",
     "\\skyblips\\siteplan"
   ],
-  "SelectedNode": "\\skyblips\\js\\script.js",
+  "SelectedNode": "\\lesson4\\js\\script.js",
   "PreviewInSolutionExplorer": false
 }
