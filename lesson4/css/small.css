@@ -133,7 +133,7 @@ nav {
 
 h2 {
     padding: .5em;
-    padding-left: 2em;
+    padding-left: 0px;
     margin-bottom: 0px;
     border-radius: 0px 25px 0px 0px;
     background-color: #00C0ff;
