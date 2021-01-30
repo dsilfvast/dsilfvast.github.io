@@ -1,7 +1,6 @@
 ﻿/*@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');*/
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
 body {
-    max-width: 1200px;
     margin: 0 auto;
     background-color: #d8d8d8;
     border-left: .5em solid black;
