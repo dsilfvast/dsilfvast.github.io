@@ -1,0 +1,125 @@
+﻿/*@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
+
+body {
+    background-color: #d8d8d8;
+    color: black;
+    padding: 0;
+    margin: 0;
+    font-family: "Times New Roman", Times, serif;
+}
+
+header {
+    background-color: #00A0ff;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    header img {
+        width: 80px;
+        height: auto;
+    }
+
+.headings {
+    display: flex;
+    flex-direction: column;
+}
+
+    .headings h1 {
+        font-size: 1.6em;
+        margin: 0 0 0 17px;
+    }
+
+.m {
+    font-family: 'Merriweather', "Times New Roman", serif;
+    font-style: italic;
+    letter-spacing: 1pt;
+    /*  color: forestgreen; */
+    margin-left: 20px;
+    font-size: .9em;
+    
+}
+
+nav {
+    margin: 0 auto;
+    background-color: white;
+
+}
+
+.navigation {
+    list-style: none;
+    padding: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-bottom: 2px solid black;
+}
+
+    .navigation li:first-child {
+        display: block;
+    }
+
+    .navigation li {
+        display: none;
+    }
+
+    .navigation a {
+        display: block;
+        padding: 0.75rem;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
+        font-size: 1em;
+    }
+
+        .navigation a:hover {
+            color: black;
+            background-color: #d8d8d8;
+        }
+
+.responsive li {
+    display: block;
+}
+
+.active {
+    background-color: #b0b0b0 !important;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+h2 {
+    padding: .5em;
+    padding-left: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    background-color: #20D0ff;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.merriweather {
+    font-family: 'Merriweather', "Times New Roman", serif;
+}
+
+.dotted {
+    padding: 1em 5em 1em 5em;
+    text-align: left;
+    border: 1px dashed black;
+    margin-top: .8em;
+    margin-bottom: .8em;
+    background-color: white;
+}
+
+footer {
+    font-family: 'Merriweather', "Times New Roman", serif;
+    background-color: #00a0ff;
+    text-align: center;
+    margin-top: .8em;
+    font-size: .8em;
+    padding-top: 1.1em;
+    padding-bottom: 1.1em;
+}
+
