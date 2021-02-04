@@ -25,6 +25,7 @@ header {
 .headings {
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
     .headings h1 {
