@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Sky Blips Weather Site">
+    <title>Sky Blips - Preston</title>
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- Web font loader
+    Place up here to avoid a font flash on reload-->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/mywebfont.js"></script>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script src="js/script.js"></script>
+</head>
+<body onload="startPage()">
+    <header>
+        <picture>
+            <img src="images/colorlogo.png" alt="Sky Blips Logo">
+        </picture>
+        <section class="headings">
+            <h1>Sky Blips</h1>
+            <div class="m">They'll never know what hit em!</div>
+        </section>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#" onclick="return false">&#x2630; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="#">Preston</a></li>
+            <li><a href="#">Soda&nbsp;Springs</a></li>
+            <li><a href="#">Fish&nbsp;Haven</a></li>
+            <li><a href="#">Storm&nbsp;Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div>
+            <h2>Preston Idaho</h2>
+            <div class="hero-div merriweather">
+                <!-- <img class="hero-img" src="images/preston.jpg" alt="Preston" /> -->
+                <picture class="hero-picture">
+                    <source media="(max-width: 800px)" srcset="images/franklin-small.jpg" />
+                    <source media="(max-width: 1260px)" srcset="images/franklin-med.jpg" />
+                    <img class="hero-img" src="images/franklin-large.jpg" alt="Preston" />
+                </picture>
+                <section class="stats">
+                    <h3>Weather Summary</h3>
+                    <div>Currently:</div><div class="stats-right"><span id="weather-current">Sunny</span></div>
+                    <div>High:</div><div class="stats-right"><span id="weather-high">39.8</span> &#176;F</div>
+                    <div>Wind Chill:</div><div class="stats-right"><span id="weather-wind-chill"></span> &#176;F</div>
+                    <div>Humidity:</div><div class="stats-right"><span id="weather-humidity">69</span>%</div>
+                    <div>Wind Speed:</div><div class="stats-right"><span id="weather-wind-speed">7.3</span> mph</div>
+                </section>
+            </div>
+            <div class="forcast-div">
+                <h3>5 day forcast</h3>
+                <div id="five-day">
+                </div>
+            </div>
+            <div class="article-div">
+                <h3>House passes Rep. Nate's 'lemonade stand' bill</h3>
+                <p class="article-author">By SALLY KRUTZIG Idaho Falls Post Register Feb 1, 2021</p>
+                <img class="article-img" src="images/lemonade.jpg" alt="lemonade" />
+                <p class="article-content">
+                    BOISE — The House of Representatives on Monday voted 68-2 in favor of passing a “lemonade stand bill”
+                    sponsored by Rep. Ron Nate, R-Rexburg. House Bill 21 seeks to limit the government’s ability to collect
+                    licenses, permits, fees or sales tax from children under 18. The bill only applies to “infrequent”
+                    businesses, like lemonade stands. Children are only exempt from sales taxes if sales do not exceed
+                    $10,000. Nate told the House this bill will motivate kids...
+                </p>
+                <p class="article-source">
+                    <a target="_blank" href="https://www.idahopress.com/news/local/house-passes-rep-nates-lemonade-stand-bill/article_294e2f52-bc62-511a-8c77-d2a2d2547625.html">Full article at idahopress.com</a>
+                </p>
+            </div>
+            <div class="contact-div">
+                <h3 id="contact-h3">Contact Information</h3>
+                <div class="contact-grid">
+                    <h4 id="contact-h4">Contact Information:</h4>
+                    <div>Sky Blips<br />101 E Viking St Drive<br />Rexburg, ID 83460</div>
+                    <div>&#9993;&nbsp;Email: <a href="mailto:contact@skyblips.com">contact@skyblips.com</a></div>
+                    <div>&#9742;&nbsp;Phone: <a href="tel:15555555555">(555) 555-5555</a></div>
+                    <img src="images/location.png" alt="Sky Blips map." />
+                    <div class="socials-div">
+                        <a href="https://www.instagram.com" target="_blank" title="Instagram"><img class="social-link" src="images/instagram.png" alt="Instagram icon"></a>
+                        <a href="https://www.pinterest.com" target="_blank" title="Pinterest"><img class="social-link" src="images/pinterest.png" alt="Pinterest icon"></a>
+                        <a href="https://www.twitter.com" target="_blank" title="Twitter"><img class="social-link" src="images/twitter.png" alt="Twitter icon"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        &copy;<span id="year"></span> | Dustin&nbsp;Silfvast | Utah | <a href="../index.html">Portal</a> |
+        <a href="https://www.byui.edu/online" target="_blank">BYUI&nbsp;Online&nbsp;Learning</a><br />
+        <span id="dateTime"></span>
+    </footer>
+
+    <script src="js/windchill.js"></script>
+</body>
+</html>
+
+
+<!--
+<div>
+    <p>Day</p>
+    <img src="images/sunny.jpg" />
+    <p>High&nbsp;High&#176;F</p>
+    <p>Low&nbsp;Low&#176;F</p>
+</div>
+-->

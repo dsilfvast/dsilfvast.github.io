@@ -1,0 +1,11 @@
+﻿
+/* Media Query for large+ views */
+@media only screen and (min-width: 60.5em) {
+    .headings h1 {
+        font-size: 64px;
+    }
+    .navigation a {
+        font-size: 1.3em;
+    }
+}
+
