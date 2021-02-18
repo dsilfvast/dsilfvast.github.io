@@ -5,7 +5,7 @@
 }
 
 img[data-src] {
-    filter: blur(0.0em);
+    filter: blur(0.2em);
 }
 
 @keyframes image-blur{
