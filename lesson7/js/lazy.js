@@ -17,10 +17,11 @@ const imgOptions = {
 
 const imgObserver = new IntersectionObserver((entries, imgObserver) => {
     entries.forEach(entry => {
-        if (!entry.isIntersecting || entry === null || entry === undefined) return;
 
-        preloadImage(entry.target);
-        imgObserver.unobserve(entry.target);
+        if (entry.intersectionRatio == 1) {
+            preloadImage(entry.target);
+            imgObserver.unobserve(entry.target);
+        }        
     })
 }, imgOptions);
 
