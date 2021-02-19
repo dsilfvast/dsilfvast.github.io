@@ -17,8 +17,10 @@
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
     <script src="js/script.js"></script>
+    <script src="js/banner.js"></script>
+    <script src="js/5dayforcast.js"></script>
 </head>
-<body onload="startPage()">
+<body onload="startPage(); showAnnouncement(); loadFiveDayForcast();">
     <header>
         <picture>
             <img src="images/colorlogo.png" alt="Sky Blips Logo">
@@ -33,11 +35,11 @@
         <ul class="navigation">
             <li><a class="ham" href="#" onclick="return false">&#x2630; Menu</a></li>
             <li><a href="#">Home</a></li>
-            <li class="active"><a href="#">Preston</a></li>
+            <li class="active"><a href="preston.html">Preston</a></li>
             <li><a href="#">Soda&nbsp;Springs</a></li>
             <li><a href="#">Fish&nbsp;Haven</a></li>
             <li><a href="#">Storm&nbsp;Center</a></li>
-            <li><a href="#">Gallery</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
         </ul>
     </nav>
     <main>
@@ -113,13 +115,3 @@
     <script src="js/windchill.js"></script>
 </body>
 </html>
-
-
-<!--
-<div>
-    <p>Day</p>
-    <img src="images/sunny.jpg" />
-    <p>High&nbsp;High&#176;F</p>
-    <p>Low&nbsp;Low&#176;F</p>
-</div>
--->
