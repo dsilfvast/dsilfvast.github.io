@@ -36,10 +36,10 @@ ul {
     /*font-family: 'Baloo Paaji 2', cursive;*/
     font-family: 'Baloo Paaji 2';
 }
-a{
+li a{
     color: #0000FF;
 }
-a:visited {
+li a:visited {
     color: #4000ff;
 }
 
