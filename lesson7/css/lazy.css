@@ -16,3 +16,11 @@ img[data-src] {
 .blur {
     animation: image-blur 2s;
 }
+
+/* Used to load a placeholder for grid sizing before lazy loading executes*/
+#placeholder-cache {
+    display: inline;
+    width: 1px;
+    height: 1px;
+    visibility: hidden;
+}

@@ -32,6 +32,10 @@
     </section>
 
     <script src="js/lazy.js"></script>
+    <!--This hidden image is used to size the grid before lazy loading.
+        Once the image is loaded, it enables lazy loading.
+        This will fix a bug in firefox where everything triggers an intersection before the grid is populated and expanded.-->
+    <img onload="enableLazyLoading()" id="placeholder-cache" src="images/placeholder.gif" alt="hidden" />
 </body>
 </html>
 
