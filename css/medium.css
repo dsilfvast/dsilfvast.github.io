@@ -62,6 +62,14 @@ a:visited {
     color: #006000;
 }
 
+footer a {
+    color: black;
+}
+
+    footer a:hover {
+        color: black;
+        font-size: 1.05rem;
+    }
 
 .wf-loading {
     visibility: hidden;
@@ -71,3 +79,4 @@ To show the fonts after they have loaded, you would include:
 .wf-active {
     visibility: visible;
 }
+
