@@ -75,7 +75,7 @@ footer a {
     visibility: hidden;
 }
 
-To show the fonts after they have loaded, you would include:
+/*To show the fonts after they have loaded, you would include:*/
 .wf-active {
     visibility: visible;
 }
