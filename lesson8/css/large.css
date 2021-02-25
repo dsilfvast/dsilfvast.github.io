@@ -1,0 +1,22 @@
+﻿
+/* Media Query for large+ views */
+@media only screen and (min-width: 60.5em) {
+    .headings h1 {
+        font-size: 64px;
+    }
+    .navigation a {
+        font-size: 1.3em;
+    }
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+        .gallery img {
+            width: 100%;
+        }
+    figure:hover {
+        box-shadow: 0px 0px 10px 10px #777;
+    }
+}
+

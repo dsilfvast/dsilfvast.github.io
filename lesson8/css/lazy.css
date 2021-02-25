@@ -1,0 +1,26 @@
+﻿.grid{
+    display:grid;
+    grid-template-columns: 1fr;
+    justify-items:center;
+}
+
+img[data-src] {
+    filter: blur(0.2em);
+}
+
+@keyframes image-blur{
+    0% {filter: blur(0.9em);}
+    100% {filter: blur(0.0em);}
+}
+
+.blur {
+    animation: image-blur 2s;
+}
+
+/* Used to load a placeholder for grid sizing before lazy loading executes*/
+#placeholder-cache {
+    display: inline;
+    width: 1px;
+    height: 1px;
+    visibility: hidden;
+}

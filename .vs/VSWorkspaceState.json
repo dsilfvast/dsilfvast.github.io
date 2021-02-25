@@ -1,16 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\lesson4",
-    "\\lesson4\\js",
     "\\lesson5",
     "\\lesson5\\js",
     "\\lesson6",
     "\\lesson6\\js",
+    "\\lesson7",
+    "\\lesson7\\js",
     "\\skyblips",
     "\\skyblips\\js",
     "\\skyblips\\siteplan"
   ],
-  "SelectedNode": "\\lesson6\\js\\windchill.js",
+  "SelectedNode": "\\lesson7\\js\\lazy.js",
   "PreviewInSolutionExplorer": false
 }
