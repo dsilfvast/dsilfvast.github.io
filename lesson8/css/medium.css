@@ -98,7 +98,7 @@
             display: inline-block;
         }
 
-    .article-div {
+    .article-div{
         overflow: auto;
         max-width: 800px;
         margin: 0 auto;
@@ -190,5 +190,9 @@
             width: 100%;
         }
 
-
+    .form-div {
+        max-width: 800px;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
 }

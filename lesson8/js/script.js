@@ -33,7 +33,8 @@ function getModifiedDate() {
     document.getElementById("dateTime").innerHTML = output;
 }
 
-
-
+function setAutoFocus(ID) {
+    document.getElementById(ID).focus();
+}
 
 

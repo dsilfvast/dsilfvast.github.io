@@ -1,16 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\lesson5",
-    "\\lesson5\\js",
-    "\\lesson6",
-    "\\lesson6\\js",
     "\\lesson7",
     "\\lesson7\\js",
+    "\\lesson8",
+    "\\lesson8\\js",
+    "\\lesson8\\tablebuild",
+    "\\lesson8\\tablebuild\\js",
     "\\skyblips",
     "\\skyblips\\js",
     "\\skyblips\\siteplan"
   ],
-  "SelectedNode": "\\lesson7\\js\\lazy.js",
+  "SelectedNode": "\\lesson8\\tablebuild\\js\\mywebfont.js",
   "PreviewInSolutionExplorer": false
 }
