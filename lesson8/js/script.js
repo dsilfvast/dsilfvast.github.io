@@ -61,25 +61,35 @@ function formReport(ID) {
     const urlParams = new URLSearchParams(queryString);
     let output = "";
 
-    if (urlParams.get('full-name') != null)
+    let temp = urlParams.get('full-name');
+    if ((temp != null) && (temp != ""))
         output = "<strong>Name: </strong>" + urlParams.get('full-name') + "<br />";
-    if (urlParams.get('email') != null)
+    temp = urlParams.get('email');
+    if ((temp != null) && (temp != ""))
         output += "<strong>Email: </strong>" + urlParams.get('email') + "<br />";
-    if (urlParams.get('phone') != null)
+    temp = urlParams.get('phone');
+    if ((temp != null) && (temp != ""))
         output += "<strong>Phone: </strong>" + urlParams.get('phone') + "<br />";
-    if (urlParams.get('zipcode') != null)
+    temp = urlParams.get('zipcode');
+    if ((temp != null) && (temp != ""))
         output += "<strong>Zip Code: </strong>" + urlParams.get('zipcode') + "<br />";
-    if (urlParams.get('stormdate') != null)
+    temp = urlParams.get('stormdate');
+    if ((temp != null) && (temp != ""))
         output += "<strong>Storm Date: </strong>" + urlParams.get('stormdate') + "<br />";
-    if (urlParams.get('stormtype') != null)
+    temp = urlParams.get('stormtype');
+    if ((temp != null) && (temp != ""))
         output += "<strong>Storm Type: </strong>" + urlParams.get('stormtype') + "<br />";
-    if (urlParams.get('severity') != null)
+    temp = urlParams.get('severity');
+    if ((temp != null) && (temp != ""))
         output += "<strong>Severity: </strong>" + urlParams.get('severity') + "<br />";
-    if (urlParams.get('stormregion') != null)
+    temp = urlParams.get('stormregion');
+    if ((temp != null) && (temp != ""))
         output += "<strong>Region: </strong>" + urlParams.get('stormregion') + "<br />";
-    if (urlParams.get('danger') != null)
+    temp = urlParams.get('danger');
+    if ((temp != null) && (temp != ""))
         output += "<strong>Danger: </strong>" + urlParams.get('danger') + "<br />";
-    if (urlParams.get('comment') != null)
+    temp = urlParams.get('comment');
+    if ((temp != null) && (temp != ""))
         output += "<strong>Comment: </strong>" + urlParams.get('comment') + "<br />";
 
     document.getElementById(ID).innerHTML = output;
