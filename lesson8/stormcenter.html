@@ -36,10 +36,10 @@
         <ul class="navigation">
             <li><a class="ham" href="#" onclick="return false">&#x2630; Menu</a></li>
             <li><a href="#">Home</a></li>
-            <li class="active"><a href="preston.html">Preston</a></li>
+            <li><a href="preston.html">Preston</a></li>
             <li><a href="#">Soda&nbsp;Springs</a></li>
             <li><a href="#">Fish&nbsp;Haven</a></li>
-            <li><a href="stormcenter.html">Storm&nbsp;Center</a></li>
+            <li class="active"><a href="stormcenter.html">Storm&nbsp;Center</a></li>
             <li><a href="gallery.html">Gallery</a></li>
         </ul>
     </nav>
@@ -47,35 +47,35 @@
 
         <h2>Storm Center</h2>
         <div class="form-div">
-            <h3 class="form-h3">Please fill out this form to make a weather report.</h3>
-            <form action="thanks.html" target="_self" method="post" class="form-grid">
+            <h3 class="form-h3">Please fill out this form to submit a weather report.</h3>
+            <form action="thanks.html" name="stormform" target="_self" method="get" class="form-grid">
                 <div class="form-grid2">
                     <label for="full-name" id="full-name-label">
-                        <span class="required">*</span>Full Name:
-                        <input type="text" id="full-name" name="full-name" pattern="[a-zA-Z-.\s]{5,}" required />
+                        <span class="required">*</span>Full Name:<br class="toggle-br" />
+                        <input type="text" id="full-name" name="full-name" pattern="[a-zA-Z-.\s]{5,}" autofocus required />
                     </label>
                     <label for="email" id="email-label">
-                        E-mail:
-                        <input type="text" id="email" name="email" placeholder="name@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-zA-Z]{2,}$" />
+                        E-mail:<br class="toggle-br" />
+                        <input type="text" id="email" name="email" placeholder="name@example.com" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" />
                     </label>
                     <label for="phone" id="phone-label">
-                        <span class="required">*</span>Phone Number:
-                        <input type="tel" id="phone" name="phone" pattern="[0-9\+\- ]{0,4}[(]?[0-9]{3}[)\- ]?[0-9]{3}[- ]?[0-9]{4}" required />
+                        <span class="required">*</span>Phone Number:<br class="toggle-br" />
+                        <input type="tel" id="phone" name="phone" placeholder="###-###-###" pattern="[0-9\+\- ]{0,4}[(]?[0-9]{3}[)\- ]?[0-9]{3}[- ]?[0-9]{4}" required />
                     </label>
                     <label for="zipcode" id="zipcode-label">
-                        <span class="required">*</span>Zip Code:
-                        <input type="number" id="zipcode" name="zipcode" required />
+                        <span class="required">*</span>Zip Code:<br class="toggle-br" />
+                        <input type="number" id="zipcode" name="zipcode" min="1000" required />
                     </label>
                     <label for="stormdate" id="stormdate-label">
-                        Storm Date:
+                        Storm Date:<br class="toggle-br" />
                         <input type="date" id="stormdate" name="stormdate" />
                     </label>
 
                     <label for="stormtype" id="stormtype-label">
-                        Storm Type:
+                        Storm Type:<br class="toggle-br" />
                         <input id="stormtype" name="stormtype" list="stormtypes-list" />
                         <datalist id="stormtypes-list">
-                            <option value="Flash Flood">Flash Flood</option>
+                            <option value="Flash-Flood">Flash Flood</option>
                             <option value="Hail">Hail</option>
                             <option value="Hurricane">Hurricane</option>
                             <option value="Thunderstorm">Thunderstorm</option>
@@ -84,10 +84,10 @@
                     </label>
 
                     <label for="severity" id="severity-label">
-                        Storm Severity:
-                        <input type="range" id="severity" name="severity" value="5" min="1" max="10" step="1" list="ticks"
-                               oninput="adjustSeverity(this.value)"
-                               onchange="adjustSeverity(this.value)" />
+                        Storm Severity:<br class="toggle-br" />
+                        <input type="range" id="severity" name="severity" value="5" min="1" max="10" step="1" list="ticks" autocomplete="off"
+                               oninput="adjustSeverity(this.value, 'severity-out')"
+                               onchange="adjustSeverity(this.value, 'severity-out')" />
                         <datalist id="ticks">
                             <option value="0"></option>
                             <option value="1"></option>
@@ -105,12 +105,12 @@
                     <div id="severity-out">5</div>
 
                     <label for="stormregion" id="stormregion-label">
-                        Storm Region:
+                        Storm Region:<br class="toggle-br" />
                         <select id="stormregion" name="stormregion">
                             <option value="" disabled selected>Select Region ...</option>
                             <option value="Preston">Preston</option>
-                            <option value="Soda Springs">Soda Springs</option>
-                            <option value="Fish Haven">Fish Haven</option>
+                            <option value="Soda-Springs">Soda Springs</option>
+                            <option value="Fish-Haven">Fish Haven</option>
                         </select>
                     </label>
 
@@ -140,7 +140,7 @@
                     Comments / Additional Information:<br />
                     <textarea id="comment" name="comment" rows="4"></textarea><br />
                 </label>
-                <button type="reset" id="reset">Clear</button>
+                <button type="reset" id="reset" onclick="adjustSeverity(5, 'severity-out'); setAutoFocus('full-name');">Clear</button>
                 <button type="submit" id="submit">Submit</button>
             </form>
         </div>
@@ -150,6 +150,8 @@
         <a href="https://www.byui.edu/online" target="_blank">BYUI&nbsp;Online&nbsp;Learning</a><br />
         <span id="dateTime"></span>
     </footer>
-
+    <script>
+        setAutoFocus('full-name');
+    </script>
 </body>
 </html>

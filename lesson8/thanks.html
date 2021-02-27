@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Sky Blips Weather Site">
+    <title>Sky Blips - Storm Center</title>
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- Web font loader
+    Place up here to avoid a font flash on reload-->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/mywebfont.js"></script>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script src="js/script.js"></script>
+    <script src="js/banner.js"></script>
+</head>
+<body onload="startPage(); showAnnouncement(); insertName('name-thanks'); formReport('form-report');">
+    <div class="announcement-div"></div>
+    <header>
+        <picture>
+            <img src="images/colorlogo.png" alt="Sky Blips Logo">
+        </picture>
+        <section class="headings">
+            <h1>Sky Blips</h1>
+            <div class="m">They'll never know what hit em!</div>
+        </section>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#" onclick="return false">&#x2630; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="#">Soda&nbsp;Springs</a></li>
+            <li><a href="#">Fish&nbsp;Haven</a></li>
+            <li><a href="stormcenter.html">Storm&nbsp;Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+
+        <h2>Storm Center</h2>
+        <div class="form-div">
+            <h3 class="form-h3">Success! - Thank you<span id="name-thanks"></span>!</h3>
+            <div class="thanks-div">
+                <p>Than you for submitting your report!</p>
+                <div id="form-report">
+                </div>
+            </div>
+            
+
+
+        </div>
+    </main>
+    <footer>
+        &copy;<span id="year"></span> | Dustin&nbsp;Silfvast | Utah | <a href="../index.html">Portal</a> |
+        <a href="https://www.byui.edu/online" target="_blank">BYUI&nbsp;Online&nbsp;Learning</a><br />
+        <span id="dateTime"></span>
+    </footer>
+</body>
+</html>
