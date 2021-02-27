@@ -362,7 +362,8 @@ footer a{
 }
 
 .required {
-    color: red;
+    font-size: 1.3rem;
+    color: rgb(220, 0, 0);
 }
 
 .toggle-br{
