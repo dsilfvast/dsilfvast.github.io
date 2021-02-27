@@ -52,22 +52,35 @@ function insertName(ID) {
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     const fullName = urlParams.get('full-name');
-    document.getElementById(ID).innerHTML = ", " + fullName;
+    if (fullName != null)
+        document.getElementById(ID).innerHTML = ", " + fullName;
 }
 
 function formReport(ID) {
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
-    let output = "<strong>Name: </strong>" + urlParams.get('full-name') + "<br />";
-    output += "<strong>Email: </strong>" + urlParams.get('email') + "<br />";
-    output += "<strong>Phone: </strong>" + urlParams.get('phone') + "<br />";
-    output += "<strong>Zip Code: </strong>" + urlParams.get('zipcode') + "<br />";
-    output += "<strong>Storm Date: </strong>" + urlParams.get('stormdate') + "<br />";
-    output += "<strong>Storm Type: </strong>" + urlParams.get('stormtype') + "<br />";
-    output += "<strong>Severity: </strong>" + urlParams.get('severity') + "<br />";
-    output += "<strong>Region: </strong>" + urlParams.get('stormregion') + "<br />";
-    output += "<strong>Danger: </strong>" + urlParams.get('danger') + "<br />";
-    output += "<strong>Comment: </strong>" + urlParams.get('comment') + "<br />";
+    let output = "";
+
+    if (urlParams.get('full-name') != null)
+        output = "<strong>Name: </strong>" + urlParams.get('full-name') + "<br />";
+    if (urlParams.get('email') != null)
+        output += "<strong>Email: </strong>" + urlParams.get('email') + "<br />";
+    if (urlParams.get('phone') != null)
+        output += "<strong>Phone: </strong>" + urlParams.get('phone') + "<br />";
+    if (urlParams.get('zipcode') != null)
+        output += "<strong>Zip Code: </strong>" + urlParams.get('zipcode') + "<br />";
+    if (urlParams.get('stormdate') != null)
+        output += "<strong>Storm Date: </strong>" + urlParams.get('stormdate') + "<br />";
+    if (urlParams.get('stormtype') != null)
+        output += "<strong>Storm Type: </strong>" + urlParams.get('stormtype') + "<br />";
+    if (urlParams.get('severity') != null)
+        output += "<strong>Severity: </strong>" + urlParams.get('severity') + "<br />";
+    if (urlParams.get('stormregion') != null)
+        output += "<strong>Region: </strong>" + urlParams.get('stormregion') + "<br />";
+    if (urlParams.get('danger') != null)
+        output += "<strong>Danger: </strong>" + urlParams.get('danger') + "<br />";
+    if (urlParams.get('comment') != null)
+        output += "<strong>Comment: </strong>" + urlParams.get('comment') + "<br />";
 
     document.getElementById(ID).innerHTML = output;
 }
