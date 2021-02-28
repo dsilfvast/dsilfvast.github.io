@@ -367,133 +367,6 @@ footer a{
     color: rgb(220, 0, 0);
 }
 
-.toggle-br{
-    display: block;
-}
-
-.form-grid {
-    background-color: white;
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: left;
-    display: grid;
-    grid-template-columns: max-content max-content;
-    border-top: unset;
-    grid-gap: 10px;
-    justify-content: center;
-    align-items: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    font-size: 1.2rem;
-}
-
-.form-grid2 {
-    grid-row: 1/2;
-    grid-column: 1/3;
-    display: grid;
-    grid-template-columns: max-content max-content;
-    justify-self: center;
-    align-items: center;
-    grid-gap: 10px;
-}
-
-
-#full-name-label {
-    grid-row: 1/2;
-    grid-column: 1/2;
-    justify-self: end;
-}
-
-#email-label {
-    grid-row: 2/3;
-    grid-column: 1/2;
-    justify-self: end;
-}
-
-#phone-label {
-    grid-row: 3/4;
-    grid-column: 1/2;
-    justify-self: end;
-}
-#zipcode-label {
-    grid-row: 4/5;
-    grid-column: 1/2;
-    justify-self: end;
-}
-#stormdate-label {
-    grid-row: 5/6;
-    grid-column: 1/2;
-    justify-self: end;
-}
-
-#stormtype-label{
-grid-row: 6/7;
-grid-column: 1/2;
-justify-self: end;
-}
-
-#severity-label {
-    grid-row: 7/8;
-    grid-column: 1/2;
-    justify-self: end;
-}
-#severity-out {
-    grid-row: 7/8;
-    grid-column: 2/3;
-    width:50px;
-    font-size: 1.7rem;
-    font-weight:bold;
-}
-
-#stormregion-label {
-    grid-row: 8/9;
-    grid-column: 1/2;
-    justify-self: end;
-}
-
-
-#danger-field {
-    grid-row: 9/10;
-    grid-column: 1/2;
-    justify-self:center;
-    display: grid;
-    margin: 0 auto;
-    margin-top: 15px;
-    grid-template-columns: 1fr;
-    justify-items: start;
-}
-
-fieldset div{
-    padding-left:calc(50% - 30px);
-}
-
-#comment-label {
-    grid-row: 2/3;
-    grid-column: 1/3;
-    text-align: left;
-    justify-self: start;
-    margin-top:15px;
-    width:100%;
-}
-#comment {
-    max-width: 700px;
-    min-width: 250px;
-}
-
-#submit {
-    grid-row: 3/4;
-    grid-column: 2/3;
-    justify-self: end;
-    width: 6rem;
-}
-
-#reset {
-    grid-row: 3/4;
-    grid-column: 1/2;
-    justify-self: start;
-    width: 6rem;
-}
-
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -519,16 +392,19 @@ input, textarea, button, select {
     transition: border-color .25s ease-in-out,box-shadow .25s ease-in-out;
 }
 
-textarea{
-    width: 100%;
+input, button, select{
+    height: 44px;
+    font-size: 1.4rem;
 }
 
-input, select {
-    width: 15rem;
-}
-    input[type="radio"] {
-        width: 2rem;
+    textarea {
+        width: 100%;
     }
+
+input, select {
+    max-width: 25rem;
+    width:100%;
+}
 
 button {
     margin-left: .5em;
@@ -551,10 +427,65 @@ input:focus, textarea:focus, select:focus {
     box-shadow: 0 0 0 .2rem rgba(0,123,255,.25);
 }
 
-select{
-    height:28px;
+input[type="radio"] {
+    transform: scale(1.5);
+    width: 10px;
+    margin: 0px;
+    margin-right: 15px;
+    margin-left: 35px;
+    height: 20px;
 }
 
+fieldset {
+    margin: 25px;
+    background-color: #d8d8d8;
+    font-size: 1.2rem;
+    padding: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+legend{
+    background-color:white;
+    padding:10px;
+    border-radius: 20px;
+    font-size:1.4rem;
+    margin-left: -50px;
+}
+
+fieldset div{
+    margin-bottom: 0.6rem;
+}
+fieldset p {
+    margin-bottom: 0.2rem;
+}
+#severity-out{
+    font-size: 1.7rem;
+}
+
+label span{
+    display:inline-block;
+}
+
+.danger-div{
+    display:flex;
+    align-content:baseline
+}
+
+
+#sumbit-div {
+    margin: 0 auto;
+    margin-bottom: 25px;
+    text-align: center;
+}
+#submit {
+    width: 250px;
+    max-width: 250px;
+    background-color: #20D0ff;
+    color: black;
+    border-radius: 20px;
+    border: 1px solid black;
+}
 /*
 input:invalid {
     border: 2px solid red;
@@ -566,8 +497,6 @@ input:valid {
     transition: border 1s;
 }
 */
-
-
 .thanks-div {
     text-align: center;
     margin-top: 0px;
@@ -600,4 +529,113 @@ input:valid {
     width: 1px;
     height: 1px;
     visibility:hidden;
+}
+
+
+/******************
+    Style generated for range sliders
+    http://danielstern.ca/range.css/#/
+*******************/
+
+input[type=range] {
+    width: 100%;
+    margin: 7.75px 0;
+    background-color: transparent;
+    -webkit-appearance: none;
+}
+
+    input[type=range]:focus {
+        outline: none;
+    }
+
+    input[type=range]::-webkit-slider-runnable-track {
+        background: #0060a0;
+        border: 1px solid #000000;
+        border-radius: 2px;
+        width: 100%;
+        height: 8.5px;
+        cursor: pointer;
+    }
+
+    input[type=range]::-webkit-slider-thumb {
+        margin-top: -8.75px;
+        width: 12px;
+        height: 24px;
+        background: #20d0ff;
+        border: 1px solid rgba(0, 0, 0, 0.9);
+        border-radius: 8px;
+        cursor: pointer;
+        -webkit-appearance: none;
+    }
+
+    input[type=range]:focus::-webkit-slider-runnable-track {
+        background: #006cb4;
+    }
+
+    input[type=range]::-moz-range-track {
+        background: #0060a0;
+        border: 1px solid #000000;
+        border-radius: 2px;
+        width: 100%;
+        height: 8.5px;
+        cursor: pointer;
+    }
+
+    input[type=range]::-moz-range-thumb {
+        width: 12px;
+        height: 24px;
+        background: #20d0ff;
+        border: 1px solid rgba(0, 0, 0, 0.9);
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    input[type=range]::-ms-track {
+        background: transparent;
+        border-color: transparent;
+        border-width: 7.75px 0;
+        color: transparent;
+        width: 100%;
+        height: 8.5px;
+        cursor: pointer;
+    }
+
+    input[type=range]::-ms-fill-lower {
+        background: #00548c;
+        border: 1px solid #000000;
+        border-radius: 4px;
+    }
+
+    input[type=range]::-ms-fill-upper {
+        background: #0060a0;
+        border: 1px solid #000000;
+        border-radius: 4px;
+    }
+
+    input[type=range]::-ms-thumb {
+        width: 12px;
+        height: 24px;
+        background: #20d0ff;
+        border: 1px solid rgba(0, 0, 0, 0.9);
+        border-radius: 8px;
+        cursor: pointer;
+        margin-top: 0px;
+        /*Needed to keep the Edge thumb centred*/
+    }
+
+    input[type=range]:focus::-ms-fill-lower {
+        background: #0060a0;
+    }
+
+    input[type=range]:focus::-ms-fill-upper {
+        background: #006cb4;
+    }
+/*TODO: Use one of the selectors from https://stackoverflow.com/a/20541859/7077589 and figure out
+how to remove the virtical space around the range input in IE*/
+@supports (-ms-ime-align:auto) {
+    /* Pre-Chromium Edge only styles, selector taken from hhttps://stackoverflow.com/a/32202953/7077589 */
+    input[type=range] {
+        margin: 0;
+        /*Edge starts the margin from the thumb, not the track as other browsers do*/
+    }
 }
