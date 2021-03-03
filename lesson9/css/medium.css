@@ -57,6 +57,9 @@
         border: 1px solid black;
     }
 
+    .hero-div {
+        max-width: 804px;
+    }
     .forcast-div {
         display: block;
         max-width: 800px;
