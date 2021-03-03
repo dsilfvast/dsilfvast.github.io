@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Sky Blips Weather Site">
+    <title>Sky Blips - Storm Center</title>
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- Web font loader
+    Place up here to avoid a font flash on reload-->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/mywebfont.js"></script>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script src="js/script.js"></script>
+    <script src="js/banner.js"></script>
+</head>
+<body onload="startPage(); showAnnouncement(); setAutoFocus('full-name');">
+    <div class="announcement-div"></div>
+    <header>
+        <picture>
+            <img src="images/colorlogo.png" alt="Sky Blips Logo">
+        </picture>
+        <section class="headings">
+            <h1>Sky Blips</h1>
+            <div class="m">They'll never know what hit em!</div>
+        </section>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#" onclick="return false">&#x2630; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="#">Soda&nbsp;Springs</a></li>
+            <li><a href="#">Fish&nbsp;Haven</a></li>
+            <li class="active"><a href="stormcenter.html">Storm&nbsp;Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+
+        <h2>Storm Center</h2>
+        <div class="form-div">
+            <h3 class="form-h3">Report a storm.</h3>
+            <form action="thanks.html" name="stormform" target="_self" method="get" class="form-grid">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div>
+                        <label for="full-name" id="full-name-label">
+                            <span class="required">*</span>Full Name:<br />
+                            <input type="text" id="full-name" name="full-name" pattern="[a-zA-Z-.\s]{3,}" autofocus required />
+                        </label>
+                    </div>
+                    <div>
+                        <label for="email" id="email-label">
+                            E-mail:<br />
+                            <input type="text" id="email" name="email" placeholder="name@example.com" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" />
+                        </label>
+                    </div>
+                    <div>
+                        <label for="phone" id="phone-label">
+                            <span class="required">*</span>Phone Number:<br />
+                            <input type="tel" id="phone" name="phone" placeholder="###-###-###" pattern="[0-9\+\- ]{0,4}[(]?[0-9]{3}[)\- ]?[0-9]{3}[- ]?[0-9]{4}" required />
+                        </label>
+                    </div>
+                    <div>
+                        <label for="zipcode" id="zipcode-label">
+                            <span class="required">*</span>Zip Code:<br />
+                            <input type="number" id="zipcode" name="zipcode" min="1000" required />
+                        </label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Storm Information</legend>
+                    <div>
+                        <label for="stormdate" id="stormdate-label">
+                            Storm Date:<br />
+                            <input type="date" id="stormdate" name="stormdate" />
+                        </label>
+                    </div>
+                    <div>
+                        <label for="stormtype" id="stormtype-label">
+                            Storm Type:<br />
+                            <input id="stormtype" name="stormtype" list="stormtypes-list" />
+                            <datalist id="stormtypes-list">
+                                <option value="Flash Flood">Flash Flood</option>
+                                <option value="Hail">Hail</option>
+                                <option value="Hurricane">Hurricane</option>
+                                <option value="Thunderstorm">Thunderstorm</option>
+                                <option value="Tornado">Tornado</option>
+                            </datalist>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="severity" id="severity-label">
+                            Storm Severity: <span id="severity-out">5</span><br />
+                            <input type="range" id="severity" name="severity" value="5" min="1" max="10" step="1" list="ticks" autocomplete="off"
+                                   oninput="adjustSeverity(this.value, 'severity-out')"
+                                   onchange="adjustSeverity(this.value, 'severity-out')" />
+                            <datalist id="ticks">
+                                <option value="0"></option>
+                                <option value="1"></option>
+                                <option value="2"></option>
+                                <option value="3"></option>
+                                <option value="4"></option>
+                                <option value="5"></option>
+                                <option value="6"></option>
+                                <option value="7"></option>
+                                <option value="8"></option>
+                                <option value="9"></option>
+                                <option value="10"></option>
+                            </datalist>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="stormregion" id="stormregion-label">
+                            Storm Region:<br />
+                            <select id="stormregion" name="stormregion">
+                                <option value="" disabled selected>Select Region ...</option>
+                                <option value="Preston">Preston</option>
+                                <option value="Soda Springs">Soda Springs</option>
+                                <option value="Fish Haven">Fish Haven</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div>
+                        <p>User in danger?</p>
+                        <div class="danger-div">
+                            <input type="radio" id="danger-yes" name="danger" value="yes" />
+                            <label for="danger-yes">yes,</label>
+                        </div>
+                        <div class="danger-div">
+                            <input type="radio" id="danger-no" name="danger" value="no" />
+                            <label for="danger-no">no,</label>
+                        </div>
+                        <div class="danger-div">
+                            <input type="radio" id="danger-maybe" name="danger" value="maybe" />
+                            <label for="danger-maybe">maybe</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <label for="comment" id="comment-label">
+                        Please leave us a comment concerning your report.<br />
+                        <textarea id="comment" name="comment" rows="4"></textarea><br />
+                    </label>
+                </fieldset>
+
+                <div id="sumbit-div">
+                    <!-- The reset button is still here if it's needed-->
+                    <!--<button type="reset" id="reset" onclick="adjustSeverity(5, 'severity-out'); setAutoFocus('full-name');">Clear</button>-->
+                    <input type="submit" id="submit" value="Send Report" />
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        &copy;<span id="year"></span> | Dustin&nbsp;Silfvast | Utah | <a href="../index.html">Portal</a> |
+        <a href="https://www.byui.edu/online" target="_blank">BYUI&nbsp;Online&nbsp;Learning</a><br />
+        <span id="dateTime"></span>
+    </footer>
+    <script>
+        setAutoFocus('full-name');
+    </script>
+</body>
+</html>
