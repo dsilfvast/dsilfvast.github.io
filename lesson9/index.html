@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Sky Blips Weather Site">
+    <title>Sky Blips - Weather Site</title>
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- Web font loader
+    Place up here to avoid a font flash on reload-->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/mywebfont.js"></script>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script src="js/script.js"></script>
+    <script src="js/banner.js"></script>
+</head>
+<body onload="startPage(); showAnnouncement();">
+    <div class="announcement-div"></div>
+    <header>
+        <picture>
+            <img src="images/colorlogo.png" alt="Sky Blips Logo">
+        </picture>
+        <section class="headings">
+            <h1>Sky Blips</h1>
+            <div class="m">They'll never know what hit em!</div>
+        </section>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#" onclick="return false">&#x2630; Menu</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="#">Soda&nbsp;Springs</a></li>
+            <li><a href="#">Fish&nbsp;Haven</a></li>
+            <li><a href="stormcenter.html">Storm&nbsp;Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div>
+            <h2>Sky Blips - Weather Site</h2>
+            <div class="hero-div merriweather">
+                <!-- <img class="hero-img" src="images/preston.jpg" alt="Preston" /> -->
+                <picture class="hero-picture">
+                    <source media="(max-width: 600px)" srcset="images/preston-small.jpg" />
+                    <source media="(max-width: 700px)" srcset="images/preston-med.jpg" />
+                    <img class="hero-img" src="images/preston-large.jpg" alt="Preston" />
+                </picture>
+            </div>
+            <div class="cities-div">
+                <!--Get town data from
+                    https://byui-cit230.github.io/weather/data/towndata.json
+                -->
+                <section>
+                    <h3>Preston</h3>
+                    <div>Home of Napoleon Dynamite</div>
+                    <div>Year Founded: 1866</div>
+                    <div>Population: 5204</div>
+                    <div>Annual Rain Fall: 16.56</div>
+                    <img src="images/preston.jpg" alt="Preston" />
+                </section>
+
+                <section>
+                    <h3>Fish Haven</h3>
+                    <div>This is Fish Haven</div>
+                    <div>Year Founded: 1864</div>
+                    <div>Population: 501</div>
+                    <div>Annual Rain Fall: 14.2</div>
+                    <img src="images/fishhaven.jpg" alt="Fish Haven" />
+                </section>
+
+                <section>
+                    <h3>Soda Springs</h3>
+                    <div>Historic Oregon Trail Oasis. The Soda is on Us.</div>
+                    <div>Year Founded: 1858</div>
+                    <div>Population: 2985</div>
+                    <div>Annual Rain Fall: 15.75</div>
+                    <img src="images/sodasprings.jpg" alt="Soda Springs" />
+                </section>
+            </div>
+            <div class="article-div">
+                <h3>House passes Rep. Nate's 'lemonade stand' bill</h3>
+                <p class="article-author">By SALLY KRUTZIG Idaho Falls Post Register Feb 1, 2021</p>
+                <img class="article-img" src="images/lemonade.jpg" alt="lemonade" />
+                <p class="article-content">
+                    BOISE — The House of Representatives on Monday voted 68-2 in favor of passing a “lemonade stand bill”
+                    sponsored by Rep. Ron Nate, R-Rexburg. House Bill 21 seeks to limit the government’s ability to collect
+                    licenses, permits, fees or sales tax from children under 18. The bill only applies to “infrequent”
+                    businesses, like lemonade stands. Children are only exempt from sales taxes if sales do not exceed
+                    $10,000. Nate told the House this bill will motivate kids...
+                </p>
+                <p class="article-source">
+                    <a target="_blank" href="https://www.idahopress.com/news/local/house-passes-rep-nates-lemonade-stand-bill/article_294e2f52-bc62-511a-8c77-d2a2d2547625.html">Full article at idahopress.com</a>
+                </p>
+            </div>
+            <div class="contact-div">
+                <h3 id="contact-h3">Contact Information</h3>
+                <div class="contact-grid">
+                    <h4 id="contact-h4">Contact Information:</h4>
+                    <div>Sky Blips<br />101 E Viking St Drive<br />Rexburg, ID 83460</div>
+                    <!-- These links are not evaluated by the link checker. It's not an error'
+            <div>&#9993;&nbsp;Email: <a href="mailto:contact@skyblips.com">contact@skyblips.com</a></div>
+            <div>&#9742;&nbsp;Phone: <a href="tel:15555555555">(555) 555-5555</a></div>
+            -->
+                    <div>&#9993;&nbsp;Email: contact@skyblips.com</div>
+                    <div>&#9742;&nbsp;Phone: (555) 555-5555</div>
+                    <img src="images/location.png" alt="Sky Blips map." />
+                    <div class="socials-div">
+                        <a href="https://www.instagram.com" target="_blank" title="Instagram"><img class="social-link" src="images/instagram.png" alt="Instagram icon"></a>
+                        <a href="https://www.pinterest.com" target="_blank" title="Pinterest"><img class="social-link" src="images/pinterest.png" alt="Pinterest icon"></a>
+
+                        <!-- Link checker will not check twitter.com because it is excluded in the twitter robots.txt file. It is not an error.
+                <a href="https://www.twitter.com" target="_blank" title="Twitter"><img class="social-link" src="images/twitter.png" alt="Twitter icon"></a>
+                -->
+                        <a href="https://help.twitter.com/en" target="_blank" title="Twitter"><img class="social-link" src="images/twitter.png" alt="Twitter icon"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        &copy;<span id="year"></span> | Dustin&nbsp;Silfvast | Utah | <a href="../index.html">Portal</a> |
+        <a href="https://www.byui.edu/online" target="_blank">BYUI&nbsp;Online&nbsp;Learning</a><br />
+        <span id="dateTime"></span>
+    </footer>
+</body>
+</html>
