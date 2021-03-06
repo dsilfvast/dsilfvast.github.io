@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/large.css">
     <script src="js/script.js"></script>
     <script src="js/banner.js"></script>
+    <script src="js/cities.js" defer></script>
 </head>
 <body onload="startPage(); showAnnouncement();">
     <div class="announcement-div"></div>
@@ -49,15 +50,17 @@
             <div class="hero-div merriweather">
                 <!-- <img class="hero-img" src="images/preston.jpg" alt="Preston" /> -->
                 <picture class="hero-picture">
-                    <source media="(max-width: 600px)" srcset="images/preston-small.jpg" />
-                    <source media="(max-width: 700px)" srcset="images/preston-med.jpg" />
-                    <img class="hero-img" src="images/preston-large.jpg" alt="Preston" />
+                    <source media="(max-width: 600px)" srcset="images/main-small.jpg" />
+                    <source media="(max-width: 700px)" srcset="images/main-medium.jpg" />
+                    <img class="hero-img" src="images/main-large.jpg" alt="Idaho" />
                 </picture>
             </div>
             <div class="cities-div">
                 <!--Get town data from
                     https://byui-cit230.github.io/weather/data/towndata.json
                 -->
+                
+                <!--
                 <section>
                     <h3>Preston</h3>
                     <div>Home of Napoleon Dynamite</div>
@@ -84,20 +87,20 @@
                     <div>Annual Rain Fall: 15.75</div>
                     <img src="images/sodasprings.jpg" alt="Soda Springs" />
                 </section>
+                -->
             </div>
             <div class="article-div">
-                <h3>House passes Rep. Nate's 'lemonade stand' bill</h3>
-                <p class="article-author">By SALLY KRUTZIG Idaho Falls Post Register Feb 1, 2021</p>
-                <img class="article-img" src="images/lemonade.jpg" alt="lemonade" />
+                <h3>Idaho cow manure pollution bill approved by Senate panel</h3>
+                <p class="article-author">By Keith Ridler from the Associated Press, Mar 4, 2021</p>
+                <img class="article-img" src="images/cows.jpg" alt="lemonade" />
                 <p class="article-content">
-                    BOISE — The House of Representatives on Monday voted 68-2 in favor of passing a “lemonade stand bill”
-                    sponsored by Rep. Ron Nate, R-Rexburg. House Bill 21 seeks to limit the government’s ability to collect
-                    licenses, permits, fees or sales tax from children under 18. The bill only applies to “infrequent”
-                    businesses, like lemonade stands. Children are only exempt from sales taxes if sales do not exceed
-                    $10,000. Nate told the House this bill will motivate kids...
+                    BOISE, Idaho (AP) — A Senate panel on Thursday approved legislation that’s the product of Idaho's hundreds of thousands of cows and the 50 million pounds of cow manure they produce daily.
+                    <br /><br />The Senate Agricultural Affairs Committee voted 5-3 to send to the full Senate the bill requiring state officials to consider economic ramifications when imposing pollution regulations on farms and ranches producing manure to protect nearby communities and the environment from pollution.
+                    <br /><br />The bill has been promoted by by the Idaho Dairymen’s Association, Idaho Cattle Association, J.R. Simplot Co. and other agricultural groups.
+                    <br /><br />The legislation follows an unsuccessful attempt by agriculture groups to weaken current standards involving the amount of cow manure that can be put on fields. The Idaho State Department of Agriculture declined to weaken those standards, citing scientific research that sets best practices for pollution control.
                 </p>
                 <p class="article-source">
-                    <a target="_blank" href="https://www.idahopress.com/news/local/house-passes-rep-nates-lemonade-stand-bill/article_294e2f52-bc62-511a-8c77-d2a2d2547625.html">Full article at idahopress.com</a>
+                    <a target="_blank" href="https://www.idahopress.com/eyeonboise/idaho-cow-manure-pollution-bill-approved-by-senate-panel/article_b4ac918d-db51-52b4-8ff3-473d108d8ee4.html">Full article at idahopress.com</a>
                 </p>
             </div>
             <div class="contact-div">

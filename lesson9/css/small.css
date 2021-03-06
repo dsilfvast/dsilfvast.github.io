@@ -511,11 +511,43 @@ input:valid {
     margin-bottom: 50px;
     line-height: 1.5rem;
 }
+
+/***************************
+index page styles for JSON data
+****************************/
+.cities-div {
+    background-color: white;
+    text-align: center;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    margin: 0 auto;
+    margin-top: -4px;
+    max-width: 800px;
+}
+    .cities-div h3 {
+        font-size: 1.4em;
+        background-color: #20D0ff;
+        padding: .5em;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        border-top: 2px solid black;
+    }
+    .cities-div p {
+        font-family: 'Merriweather', "Times New Roman", serif;
+    }
+    .cities-div img {
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        max-width: calc(100% - 100px);
+        box-shadow: 0px 0px 12px 10px #c0c0c0;
+    }
 /***************
     Keep note of the following features for new pages.
 ****************/
-/* Hide the elements until the fonts are loaded.*/
-.wf-loading {
+        /* Hide the elements until the fonts are loaded.*/
+        .wf-loading {
     visibility: hidden;
 }
 
@@ -591,52 +623,5 @@ input[type=range] {
         cursor: pointer;
     }
 
-    input[type=range]::-ms-track {
-        background: transparent;
-        border-color: transparent;
-        border-width: 7.75px 0;
-        color: transparent;
-        width: 100%;
-        height: 8.5px;
-        cursor: pointer;
-    }
 
-    input[type=range]::-ms-fill-lower {
-        background: #00548c;
-        border: 1px solid #000000;
-        border-radius: 4px;
-    }
 
-    input[type=range]::-ms-fill-upper {
-        background: #0060a0;
-        border: 1px solid #000000;
-        border-radius: 4px;
-    }
-
-    input[type=range]::-ms-thumb {
-        width: 12px;
-        height: 24px;
-        background: #20d0ff;
-        border: 1px solid rgba(0, 0, 0, 0.9);
-        border-radius: 8px;
-        cursor: pointer;
-        margin-top: 0px;
-        /*Needed to keep the Edge thumb centred*/
-    }
-
-    input[type=range]:focus::-ms-fill-lower {
-        background: #0060a0;
-    }
-
-    input[type=range]:focus::-ms-fill-upper {
-        background: #006cb4;
-    }
-/*TODO: Use one of the selectors from https://stackoverflow.com/a/20541859/7077589 and figure out
-how to remove the virtical space around the range input in IE*/
-@supports (-ms-ime-align:auto) {
-    /* Pre-Chromium Edge only styles, selector taken from hhttps://stackoverflow.com/a/32202953/7077589 */
-    input[type=range] {
-        margin: 0;
-        /*Edge starts the margin from the thumb, not the track as other browsers do*/
-    }
-}
