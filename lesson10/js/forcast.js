@@ -86,6 +86,5 @@ output += `<div>
             }
             if (counter >= 5) break;
         }
-
         document.getElementById("five-day").innerHTML = output;
     });
