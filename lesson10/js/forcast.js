@@ -70,9 +70,17 @@ fetch(forcastURL)
                 // get the weather type
                 weatherType = jsonObject.list[a].weather[0].icon;
                 weatherTypeName = jsonObject.list[a].weather[0].description;
+/* this code will use my own weather icons
 output += `<div>
     <p>${day}</p>
     <img src="images/${weatherType}.jpg" alt="${weatherTypeName}" />
+    <p>&nbsp;${temp}&#176;F</p>
+</div>`;
+*/
+
+output += `<div>
+    <p>${day}</p>
+    <img src="http://openweathermap.org/img/wn/${weatherType}@2x.png" alt="${weatherTypeName}" />
     <p>&nbsp;${temp}&#176;F</p>
 </div>`;
             }
@@ -81,14 +89,3 @@ output += `<div>
 
         document.getElementById("five-day").innerHTML = output;
     });
-
-
-
-/*
- output += `<div>
-    <p>${tempDay}</p>
-    <img src="images/${tempType}.jpg" alt="${tempType}" />
-    <p>High&nbsp;${String(tempHigh)}&#176;F</p>
-    <p>Low&nbsp;${String(tempLow)}&#176;F</p>
-</div>`;
- */

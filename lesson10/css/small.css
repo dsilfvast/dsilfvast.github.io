@@ -191,6 +191,7 @@ h2 {
         grid-row-gap: 2rem;
         grid-column-gap: 2rem;
         margin: 0 auto;
+        background-color: white;
     }
 
 .forcast-div h3, .article-div h3, .contact-div h3, .gallery-div h3{
