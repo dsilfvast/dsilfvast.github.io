@@ -30,6 +30,8 @@ function loadCity(cities, cityName) {
             city.appendChild(statsDiv);
             city.appendChild(image);
             document.querySelector('div.cities-div').appendChild(city);
+
+            return;
         }
     }
 }
@@ -41,7 +43,9 @@ fetch(requestURL)
     .then(function (jsonObject) {
         //console.table(jsonObject);  // temporary checking for valid response and data parsing
         const cities = jsonObject['towns'];
+      
         loadCity(cities, "Preston");
         loadCity(cities, "Soda Springs");
         loadCity(cities, "Fish Haven");
+
     });
