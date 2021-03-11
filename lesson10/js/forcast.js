@@ -57,7 +57,7 @@ fetch(forcastURL)
         let weatherTypeName = "";
         let day = "";
 
-        for (let a = 0; a < jsonObject.list.length; a++) {
+        for (a in jsonObject.list) {
             if (jsonObject.list[a].dt_txt.includes("18:00")) {
                 counter++;
 
@@ -70,6 +70,7 @@ fetch(forcastURL)
                 // get the weather type
                 weatherType = jsonObject.list[a].weather[0].icon;
                 weatherTypeName = jsonObject.list[a].weather[0].description;
+
 /* this code will use my own weather icons
 output += `<div>
     <p>${day}</p>
