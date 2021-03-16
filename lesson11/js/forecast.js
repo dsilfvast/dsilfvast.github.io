@@ -27,14 +27,14 @@ fetch(weatherURL)
         let wind = jsonObject.wind.speed;
 
         document.getElementById('weather-current').textContent = jsonObject.weather[0].description;
-        document.getElementById('weather-temp').textContent = Number(temp).toFixed(0);
-        document.getElementById('weather-high').textContent = Number(tempHigh).toFixed(0);
+        document.getElementById('weather-temp').textContent = Math.round(temp);
+        document.getElementById('weather-high').textContent = Math.round(tempHigh);
         document.getElementById('weather-humidity').textContent = jsonObject.main.humidity;
-        document.getElementById('weather-wind-speed').textContent = Number(wind).toFixed(1);
+        document.getElementById('weather-wind-speed').textContent = Math.round(wind);
         
         let output = "N/A"
         if (temp <= 50 && wind > 3) {
-            output = (35.74 + 0.6215 * temp - 35.75 * wind ** 0.16 + 0.4275 * temp * wind ** 0.16).toFixed(1);
+            output = Math.round(35.74 + 0.6215 * temp - 35.75 * wind ** 0.16 + 0.4275 * temp * wind ** 0.16);
             output += " \xB0F";
         }
 
