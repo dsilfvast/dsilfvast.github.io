@@ -185,7 +185,7 @@ h2 {
 
     #five-day div {
         display: grid;
-        grid-template-columns: min-content min-content min-content min-content;
+        grid-template-columns: min-content min-content min-content;
         justify-content: center;
         align-items: center;
         grid-row-gap: 2rem;
