@@ -1,8 +1,6 @@
 {
   "ExpandedNodes": [
     "",
-    "\\lesson10",
-    "\\lesson10\\js",
     "\\lesson8",
     "\\lesson8\\tablebuild",
     "\\lesson8\\tablebuild\\js",
@@ -13,5 +11,6 @@
     "\\skyblips\\js",
     "\\skyblips\\siteplan"
   ],
+  "SelectedNode": "\\lesson10\\js\\forecast.js",
   "PreviewInSolutionExplorer": false
 }
