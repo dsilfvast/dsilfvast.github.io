@@ -17,19 +17,19 @@ let forecastURL = '';
 // get the city name from the html script tag
 let city = document.getElementById("forecast-js").getAttribute("city");
 
-if (city == "preston") {
-    weatherURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=120a7a010c6068ccbed968846f77e225';
-    forecastURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=120a7a010c6068ccbed968846f77e225';
-}
-
-if (city == "sodasprings") {
-    weatherURL = 'https://api.openweathermap.org/data/2.5/weather?id=5607916&units=imperial&appid=120a7a010c6068ccbed968846f77e225';
-    forecastURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5607916&units=imperial&appid=120a7a010c6068ccbed968846f77e225';
-}
-
-if (city == "fishhaven") {
-    weatherURL = 'https://api.openweathermap.org/data/2.5/weather?lat=42.037503381700354&lon=-111.39596459380898&units=imperial&appid=120a7a010c6068ccbed968846f77e225';
-    forecastURL = 'https://api.openweathermap.org/data/2.5/forecast?lat=42.037503381700354&lon=-111.39596459380898&units=imperial&appid=120a7a010c6068ccbed968846f77e225';
+switch (city) {
+    case 'preston':
+        weatherURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=120a7a010c6068ccbed968846f77e225';
+        forecastURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=120a7a010c6068ccbed968846f77e225';
+        break;
+    case 'sodasprings':
+        weatherURL = 'https://api.openweathermap.org/data/2.5/weather?id=5607916&units=imperial&appid=120a7a010c6068ccbed968846f77e225';
+        forecastURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5607916&units=imperial&appid=120a7a010c6068ccbed968846f77e225';
+        break;
+    case 'fishhaven':
+        weatherURL = 'https://api.openweathermap.org/data/2.5/weather?lat=42.037503381700354&lon=-111.39596459380898&units=imperial&appid=120a7a010c6068ccbed968846f77e225';
+        forecastURL = 'https://api.openweathermap.org/data/2.5/forecast?lat=42.037503381700354&lon=-111.39596459380898&units=imperial&appid=120a7a010c6068ccbed968846f77e225';
+        break;
 }
 
 fetch(weatherURL)
