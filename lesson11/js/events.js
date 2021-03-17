@@ -1,7 +1,7 @@
 // JavaScript source code
 const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 
-let cityEvents = document.getElementById("events-js").getAttribute("city");
+let cityEvents = document.getElementById("events-js").getAttribute("is");
 
 switch (cityEvents) {
     case 'preston':

@@ -15,7 +15,7 @@ let weatherURL = '';
 let forecastURL = '';
 
 // get the city name from the html script tag
-let city = document.getElementById("forecast-js").getAttribute("city");
+let city = document.getElementById("forecast-js").getAttribute("is");
 
 switch (city) {
     case 'preston':
