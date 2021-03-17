@@ -28,7 +28,7 @@ fetch(requestURL)
         for (let i in cities) {
             if (cities[i].name == cityEvents) {
                 for (let e in cities[i].events) {
-                    let event = document.createElement('p');
+                    let event = document.createElement('div');
                     event.textContent = cities[i].events[e];
                     eventsDiv.appendChild(event);
                 }

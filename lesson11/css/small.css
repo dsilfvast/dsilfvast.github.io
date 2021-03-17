@@ -210,11 +210,13 @@ h2 {
     border-top: 2px solid black;
     border-right: 2px solid black;
     border-left: 2px solid black;
-    border-bottom: none;
     background-color: white;
+    padding-bottom: 1.4em;
 }
-.events-div p{
+.events-div div{
     font-size: 1.6em;
+    margin: 0px;
+    padding-top: .7em;
 }
 
 .forcast-div {
