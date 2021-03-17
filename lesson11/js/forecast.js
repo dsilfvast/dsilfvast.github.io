@@ -98,7 +98,7 @@ output += `<div>
 
 output += `<div>
     <p>${day}</p>
-    <img src="http://openweathermap.org/img/wn/${weatherType}@2x.png" alt="${weatherTypeName}" />
+    <img src="https://openweathermap.org/img/wn/${weatherType}@2x.png" alt="${weatherTypeName}" />
     <p>&nbsp;${temp}&#176;F</p>
 </div>`;
             }
