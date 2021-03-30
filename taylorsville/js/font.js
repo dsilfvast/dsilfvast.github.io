@@ -1,2 +1,1 @@
-WebFont.load({ google: { families: ['Raleway:400,700,200italic,400italic,700italic'] } });
-
+WebFont.load({ google: { families: ['Raleway:200,400,700,200italic,400italic,700italic'] } });

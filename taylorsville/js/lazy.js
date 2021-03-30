@@ -15,14 +15,14 @@ function preloadImage(img) {
 
 const imgOptions = {
     threshold: 1,
-    rootMargin: "0px 0px 50px 0px"
+    rootMargin: "100px 0px 100px 0px"
 };
 
 const imgObserver = new IntersectionObserver((entries, imgObserver) => {
     entries.forEach(entry => {
        // if (entry.intersectionRatio == 1 && entry.isIntersecting) {
         // if (entry.isIntersecting) {
-        if (entry.intersectionRatio == 1 && isPlaceholderLoaded) {
+        if (entry.isIntersecting && isPlaceholderLoaded) {
             preloadImage(entry.target);
             imgObserver.unobserve(entry.target);
         }        
