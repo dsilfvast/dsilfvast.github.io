@@ -27,7 +27,7 @@
             <div><img class="hidden" src="images/logo.png" alt="" onload="topMargin('main-body', '40px');" width="1" height="1" />
                 No weather alerts today.
             </div>
-            <div class="x-out" onclick="closeAlert('weather-alert-div', 1000); topMargin('main-body', '0px'); ">
+            <div class="x-out" onclick="closeAlert('weather-alert-div', 1000); topMargin('main-body', '0px');" tabindex="1">
                 <strong>X</strong>
             </div>
         </div>
@@ -89,11 +89,11 @@
     <footer>
         <!-- join announcement-->
         <div id="join-div">
-            <div onclick="goTo('join.html')">
+            <div onclick="goTo('join.html')" tabindex="2">
                 Become a member today!<br />
                 Click Here
             </div>
-            <div class="x-out" onclick="closeAlert('join-div', 1000);">
+            <div class="x-out" onclick="closeAlert('join-div', 1000);" tabindex="3">
                 <strong>X</strong>
             </div>
         </div>
