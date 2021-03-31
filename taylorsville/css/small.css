@@ -158,19 +158,17 @@ nav {
     left: 10px;
     color: var(--alert-txt-color);
     background-color: var(--alert-bg-color);
-    line-height: 20px;
     width: 300px;
-    margin: 0 auto;
     border: 2px solid var(--border-color);
     border-radius: 20px 10px;
     transition: left 1s;
-    user-select: none;
     cursor: pointer;
 }
 
-#join-div div:first-child {
-    padding: 5px;
-}
+    #join-div div {
+        padding: 10px 0px 10px 0px;
+        color: var(--alert-x-txt-color);
+    }
 
 #weather-alert-div {
     position: fixed;
@@ -195,7 +193,6 @@ nav {
     right: 5px;
     padding: 2px 6px 2px 6px;
     border-radius: 5px;
-    user-select: none;
     background-color: var(--alert-x-bg-color);
     color: var(--alert-x-txt-color);
     line-height: 20px;
