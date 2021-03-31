@@ -1,12 +1,209 @@
-﻿
+﻿:root {
+    --main-bg-color: white;
+    --main-txt-color: black;
+    --alert-bg-color: #bb6d65;
+    --alert-txt-color: white;
+    --alert-x-bg-color: white;
+    --alert-x-txt-color: black;
+    --border-color: #395426;
+    --hover-txt-color: #395426;
+    --hover-bg-color: #bcd8a6;
+    --nav-bg-color: #d9e9cd;
+    --nav-txt-color: black;
+    --link-bg-color: grey;
+    --link-txt-color: #395426;
+    --segment-heading-bg-color: #395426;
+    --segment-heading-txt-color: white;
+}
+
+
 body {
-    background-color: white;
-    color: black;
+    background-color: var(--main-bg-color);
+    color: var(--main-txt-color);
     padding: 0;
     margin: 0;
     font-family: 'Raleway', Helvetica, sans-serif;
+    text-align: center;
 }
 
 p {
     font-family: 'Times New Roman', Georgia, serif;
 }
+
+a {
+    text-decoration: none;
+}
+
+header a {
+    background-color: var(--main-bg-color);
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    text-decoration-line: none;
+}
+
+header > picture > img {
+    width: 80px;
+    height: auto;
+}
+
+.headings {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+    .headings h1 {
+        font-size: 1.6em;
+        margin: 0 0 0 17px;
+    }
+    .headings div {
+        font-family: 'Times New Roman', Georgia, serif;
+    }
+
+#title-bar > picture > img{
+    height: 100px;
+}
+
+nav {
+    margin: 0 auto;
+    color: var(--nav-txt-color);
+    background-color: var(--nav-bg-color);
+}
+
+.navigation {
+    list-style: none;
+    padding: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+    .navigation li:first-child {
+        display: block;
+    }
+
+    .navigation li {
+        display: none;
+    }
+
+    .navigation a {
+        display: block;
+        padding: 0.55rem;
+        text-align: center;
+        text-decoration: none;
+        color: var(--link-txt-color);
+        font-weight: 700;
+        font-size: 1em;
+    }
+
+        .navigation a:hover {
+            color: var(--hover-txt-color);
+            background-color: var(--hover-bg-color);
+        }
+
+
+.responsive li {
+    display: block;
+}
+
+.building-div > div > picture > img {
+    border: 1px solid var(--border-color);
+    width: 95%;
+    height: auto;
+}
+.building-div >div:first-child{
+    display: none;
+}
+.building-div > div:last-child {
+    display: none;
+}
+
+.building-div {
+    display: grid;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    grid-template-columns: 1fr;
+}
+
+.segment-div {
+    text-align: left;
+    border-bottom: 2px solid var(--border-color);
+    display: grid;
+    grid-template-columns: max-content auto;
+}
+
+    .segment-div h2 {
+        margin: 0px;
+        padding: 5px 30px 5px 10px;
+        border-radius: 0px 30px 0px 0px;
+        background-color: var(--segment-heading-bg-color);
+        color: var(--segment-heading-txt-color);
+    }
+
+
+
+
+
+
+
+
+
+#join-div {
+    position: fixed;
+    top: calc(100vh - 80px);
+    left: 10px;
+    color: var(--alert-txt-color);
+    background-color: var(--alert-bg-color);
+    line-height: 20px;
+    width: 300px;
+    margin: 0 auto;
+    border: 2px solid var(--border-color);
+    border-radius: 20px 10px;
+    transition: left 1s;
+    user-select: none;
+    cursor: pointer;
+}
+
+#join-div div:first-child {
+    padding: 5px;
+}
+
+#weather-alert-div {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    color: var(--alert-txt-color);
+    background-color: var(--alert-bg-color);
+    border: 1px solid var(--border-color);
+    line-height: 30px;
+    transition: left 1s;
+}
+
+#weather-alert-div div:first-child {
+    padding: 5px;
+}
+
+.x-out {
+    position: absolute;
+    border: 2px solid var(--border-color);
+    top: 5px;
+    right: 5px;
+    padding: 2px 6px 2px 6px;
+    border-radius: 5px;
+    user-select: none;
+    background-color: var(--alert-x-bg-color);
+    color: var(--alert-x-txt-color);
+    line-height: 20px;
+}
+
+.hidden{
+    visibility:hidden;
+}
+
+
+

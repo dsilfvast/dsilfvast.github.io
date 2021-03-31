@@ -4,5 +4,8 @@
     h1 {
         font-size: 64px;
     }
+    #title-bar > picture > img {
+        height: 166px;
+    }
 }
 
