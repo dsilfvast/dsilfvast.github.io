@@ -14,6 +14,7 @@
     --link-txt-color: #395426;
     --segment-heading-bg-color: #395426;
     --segment-heading-txt-color: white;
+    --bar-bg-color: #85bb65
 }
 
 
@@ -28,6 +29,10 @@ body {
 
 p {
     font-family: 'Times New Roman', Georgia, serif;
+    text-align: left;
+    font-size: 1.2rem;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 a {
@@ -115,7 +120,7 @@ nav {
     width: 95%;
     height: auto;
 }
-.building-div >div:first-child{
+.building-div > div:first-child{
     display: none;
 }
 .building-div > div:last-child {
@@ -144,6 +149,19 @@ nav {
         color: var(--segment-heading-txt-color);
     }
 
+.bar {
+    background-color: var(--bar-bg-color);
+    height: 4px;
+}
+
+.highlights-div-odd, .highlights-div-even{
+    display: grid;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    justify-items: center;
+}
 
 
 
