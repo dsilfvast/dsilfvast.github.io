@@ -68,8 +68,9 @@ header > picture > img {
         font-family: 'Times New Roman', Georgia, serif;
     }
 
-#title-bar > picture > img{
+#title-bar > picture > img {
     height: 100px;
+    margin-left: 15px;
 }
 
 nav {
@@ -148,10 +149,11 @@ nav {
 
     .segment-div h2 {
         margin: 0px;
-        padding: 5px 30px 5px 10px;
+        padding: 5px 30px 5px 15px;
         border-radius: 0px 30px 0px 0px;
         background-color: var(--segment-heading-bg-color);
         color: var(--segment-heading-txt-color);
+        font-size: 1.2rem;
     }
 
 .bar {
