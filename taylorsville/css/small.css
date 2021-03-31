@@ -110,9 +110,14 @@ nav {
             background-color: var(--hover-bg-color);
         }
 
-
 .responsive li {
     display: block;
+}
+
+.active {
+    background-color: var(--hover-bg-color) !important;
+    border-left: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
 }
 
 .building-div > div > picture > img {
@@ -162,7 +167,6 @@ nav {
     grid-gap: 20px;
     justify-items: center;
 }
-
 
 
 
