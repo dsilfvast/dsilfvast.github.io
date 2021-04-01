@@ -14,9 +14,10 @@
     --link-txt-color: #395426;
     --segment-heading-bg-color: #395426;
     --segment-heading-txt-color: white;
-    --bar-bg-color: #85bb65
+    --bar-bg-color: #85bb65;
+    --segment-bg-color: #d9e9cd;
+    --event-bg-color: #bcd8a6;
 }
-
 
 body {
     background-color: var(--main-bg-color);
@@ -145,6 +146,8 @@ nav {
 .segment-div {
     text-align: left;
     border-bottom: 2px solid var(--border-color);
+    border-top: 1px solid var(--border-color);
+    background-color: var(--segment-bg-color);
     display: grid;
     grid-template-columns: max-content auto;
 }
@@ -175,7 +178,7 @@ nav {
 
 .events-div{
     display: block;
-    margin-top: 20px;
+    margin: 20px 0px 0px 0px;
 }
 
 .events-div h3{
