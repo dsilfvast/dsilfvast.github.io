@@ -15,26 +15,32 @@ function startPage() {
 }
 
 
+function topMargin(ID, spacing = '0px') {
+    document.getElementById(ID).style.marginTop = spacing;
 
+}
 
-function closeAlert(ID, delay = 0) {
+function closeAlert(ID, bodyID, delay = 0) {
     let elem = document.getElementById(ID);
-    distance = Number(elem.clientWidth);
+    elem.style.right = "100%";
+    topMargin(bodyID);
 
+    setTimeout(function () {
+        elem.parentNode.removeChild(elem);    
+    }, delay);
+}
 
-    //elem.style.left = String(distance);
-    elem.style.left = `-${distance}px`;
+function closeJoin(ID, delay = 0) {
+    let elem = document.getElementById(ID);
+    elem.style.right = "100%";
 
     setTimeout(function () {
         elem.parentNode.removeChild(elem);
     }, delay);
 }
 
+
 function goTo(page) {
     location.href = page;
 }
 
-function topMargin(ID, spacing = '0px') {
-    document.getElementById(ID).style.marginTop = spacing;
-
-}

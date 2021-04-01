@@ -25,6 +25,7 @@ body {
     margin: 0;
     font-family: 'Raleway', Helvetica, sans-serif;
     text-align: center;
+    transition: margin 1s;
 }
 
 p {
@@ -173,19 +174,19 @@ nav {
 
 
 
-
-
-
-#join-div {
+#join-div, #weather-alert-div {
     position: fixed;
-    top: calc(100vh - 80px);
-    left: 10px;
     color: var(--alert-txt-color);
     background-color: var(--alert-bg-color);
+    border: 1px solid var(--border-color);
+    transition: right 1s;
+}
+
+#join-div {
+    bottom: 20px;
+    right: 20px;
     width: 300px;
-    border: 2px solid var(--border-color);
     border-radius: 20px 10px;
-    transition: left 1s;
     cursor: pointer;
 }
 
@@ -195,15 +196,11 @@ nav {
     }
 
 #weather-alert-div {
-    position: fixed;
     top: 0px;
-    left: 0px;
+    right: 0px;
     width: 100%;
-    color: var(--alert-txt-color);
-    background-color: var(--alert-bg-color);
-    border: 1px solid var(--border-color);
     line-height: 30px;
-    transition: left 1s;
+    transition: right 1s;
 }
 
 #weather-alert-div div:first-child {
