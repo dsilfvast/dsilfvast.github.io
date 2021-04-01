@@ -14,7 +14,6 @@ function startPage() {
 
 }
 
-
 function topMargin(ID, spacing = '0px') {
     document.getElementById(ID).style.marginTop = spacing;
 
@@ -37,10 +36,5 @@ function closeJoin(ID, delay = 0) {
     setTimeout(function () {
         elem.parentNode.removeChild(elem);
     }, delay);
-}
-
-
-function goTo(page) {
-    location.href = page;
 }
 
