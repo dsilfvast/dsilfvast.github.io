@@ -41,5 +41,19 @@
         grid-column: 1/2;
         grid-row: 1/2;
     }
+    .events-div {
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+        margin: 20px;
+    }
+
+        .events-div img {
+            width: 100%;
+            height: auto;
+        }
+
+        .events-div h3 {
+            text-align: center;
+        }
 }
 

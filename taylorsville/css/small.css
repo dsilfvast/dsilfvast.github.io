@@ -10,7 +10,7 @@
     --hover-bg-color: #bcd8a6;
     --nav-bg-color: #d9e9cd;
     --nav-txt-color: black;
-    --link-bg-color: grey;
+    --link-bg-color: white;
     --link-txt-color: #395426;
     --segment-heading-bg-color: #395426;
     --segment-heading-txt-color: white;
@@ -38,6 +38,7 @@ p {
 
 a {
     text-decoration: none;
+    color: var(--link-txt-color);
 }
 
 header a {
@@ -171,6 +172,26 @@ nav {
     justify-items: center;
 }
 
+
+.events-div{
+    display: block;
+    margin-top: 20px;
+}
+
+.events-div h3{
+    text-align: left;
+    padding-left: 35px;
+}
+
+    .events-div p {
+        text-align: left;
+        padding-left: 40px;
+        color: var(--link-txt-color);
+    }
+
+    .events-div img {
+        border: 1px solid var(--border-color);
+    }
 
 
 

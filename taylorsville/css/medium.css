@@ -53,5 +53,15 @@
         padding-left: 25px;
     }
 
+    .events-div {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+    .events-div div{
+        display: block;
+        margin: 0 auto;
+    }
+
 }
 
