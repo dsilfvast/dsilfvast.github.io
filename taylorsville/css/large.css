@@ -52,7 +52,7 @@
         grid-column: 4/5;
         grid-row: 1/2;
     }
-        .events-div div {
+        .events-div > div {
             grid-column: 2/3;
             grid-row: 1/2;
             border: 10px double var(--border-color);
@@ -64,10 +64,10 @@
             max-width: 400px;
         }
 
-        .events-div h3 {
-            text-align: center;
-            padding: 0px;
-        }
+    .events-list div {
+        text-align: center;
+        padding: 0px;
+    }
 
         .weather-large{
             display: grid;

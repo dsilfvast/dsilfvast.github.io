@@ -58,7 +58,7 @@
         grid-template-columns: 1fr;
         align-items: center;
     }
-    .events-div div{
+    .events-div > div{
         display: block;
         margin: 0 auto;
     }

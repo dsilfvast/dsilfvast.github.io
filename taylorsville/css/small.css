@@ -176,9 +176,12 @@ nav {
     margin: 20px 0px 0px 0px;
 }
 
-.events-div h3{
+.events-list div {
     text-align: left;
     padding-left: 35px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 5px;
 }
 
     .events-div p {
