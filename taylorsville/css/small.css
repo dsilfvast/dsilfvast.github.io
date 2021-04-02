@@ -17,6 +17,7 @@
     --bar-bg-color: #85bb65;
     --segment-bg-color: #d9e9cd;
     --event-bg-color: #bcd8a6;
+    --forcast-bg-color: #d9e9cd;
 }
 
 body {
@@ -194,6 +195,43 @@ nav {
 
     .events-div img {
         border: 1px solid var(--border-color);
+    }
+
+.weather-current {
+    font-size: 1.2em;
+    font-weight: 400;
+    font-family: 'Times New Roman', Georgia, serif;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    width: max-content;
+    margin: 10px auto;
+    color: red;
+    border: 10px solid var(--border-color);
+    align-items: center;
+    justify-self: center;
+}
+    .weather-current div:first-child {
+        border: 1px solid var(--border-color);
+        background-color: var(--forcast-bg-color);
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    .weather-current > img {
+        grid-column: 1/2;
+        grid-row: 2/4;
+    }
+
+    .weather-card {
+        border: 1px solid var(--border-color);
+        display: grid;
+        grid-template-columns: 1fr max-content max-content max-content max-content 1fr;
+        grid-column-gap: 25px;
+        align-items: center;
+        background-color: var(--forcast-bg-color);
+        font-size: 1.2em;
+        font-weight: 400;
+        font-family: 'Times New Roman', Georgia, serif;
     }
 
 
