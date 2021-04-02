@@ -200,7 +200,8 @@ nav {
     margin: 0 auto;
     margin-top: 15px;
     margin-bottom: 15px;
-    width: 280px;
+    width: max-content;
+    
 }
 
 .weather-info {
@@ -208,7 +209,7 @@ nav {
     font-weight: 400;
     font-family: 'Times New Roman', Georgia, serif;
     display: grid;
-    grid-template-columns: 100px 1fr;
+    grid-template-columns: max-content max-content;
     border: 4px ridge var(--border-color);
     align-items: center;
     justify-self: center;
