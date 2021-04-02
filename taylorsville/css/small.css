@@ -53,11 +53,6 @@ header a {
     text-decoration-line: none;
 }
 
-header > picture > img {
-    width: 80px;
-    height: auto;
-}
-
 .headings {
     display: flex;
     flex-direction: column;
@@ -73,7 +68,7 @@ header > picture > img {
     }
 
 #title-bar > picture > img {
-    height: 100px;
+    height: 60px;
     margin-left: 15px;
 }
 
@@ -176,8 +171,7 @@ nav {
     justify-items: center;
 }
 
-
-.events-div{
+.events-div {
     display: block;
     margin: 20px 0px 0px 0px;
 }
@@ -246,13 +240,68 @@ nav {
         margin-bottom: 15px;
     }
 
+.social-bar{
+    margin-bottom: 15px;
+}
+    .social-bar h2 {
+        border-radius: 0px 30px 30px 0px;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin-right: 30px;
+        
+    }
+    .social-bar > .segment-div {
+        grid-template-columns: max-content 60px 60px 60px;
+        justify-items: center;
+        align-items: center;
+    }
+
+.social-link {
+    width: 36px;
+    height: auto;
+    margin: 6px;
+}
+
+    .social-link:hover {
+        width: 40px;
+        height: auto;
+        margin: 4px;
+    }
+
+    .contact-div {
+        display: grid;
+        grid-template-columns: 1fr max-content 1fr;
+        align-items: center;
+        padding: 20px;
+        background-color: var(--event-bg-color)
+    }
+
+.contact-info {
+    border: 10px double var(--border-color);
+    line-height: 1.6rem;
+    background-color: var(--main-bg-color);
+    margin-bottom: 20px;
+    grid-column: 2/3;
+}
+
+    .contact-info div:nth-child(2) {
+        border-top: 1px solid var(--border-color);
+        border-bottom: 1px solid var(--border-color);
+        line-height: 2rem;
+    }
+
+.div-border {
+    border: 2px solid var(--border-color);
+    grid-column: 2/3;
+}
 
 
 footer {
     background-color: var(--segment-heading-bg-color);
     color: var(--segment-heading-txt-color);
     width: 100%;
-    height: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .white-link {
@@ -287,6 +336,7 @@ footer a:hover {
     }
 
 #weather-alert-div {
+    display: none;
     top: 0px;
     right: 0px;
     width: 100%;
@@ -313,6 +363,8 @@ footer a:hover {
 .hidden{
     visibility:hidden;
 }
+
+
 
 
 

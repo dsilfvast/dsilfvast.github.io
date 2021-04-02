@@ -40,7 +40,6 @@ fetch(weatherURL)
         // get the next 3 days
         for (let a = 1; a <= 3; a++) {
             let date = new Date(jsonObject.daily[a].dt * 1000);
-
             output +=
 `
 <div class="weather-card">
@@ -62,5 +61,23 @@ fetch(weatherURL)
         }
         output += '</div></div>';
         forecast.innerHTML += output;
+
+        // check for weather alerts
+        if (jsonObject.hasOwnProperty('alerts')) {
+            let alertMsg = "Alert: " + jsonObject.alerts.event;
+            alertMsg += "<br />" + jsonObject.alerts.description;
+            document.getElementById("alert-message").innerHTML = alertMsg;
+            // display the alert message
+            document.getElementById("weather-alert-div").style.display = 'block';
+
+        } else { // no alerts were located; display a message to show functionality
+            // shift the top margin to make room for the false alert
+            topMargin('main-body', '40px');
+            // display a false alert
+            document.getElementById("alert-message").innerHTML = "No weather alerts. Functional demonstration.";
+            document.getElementById("weather-alert-div").style.display = 'block';
+        }
+
+        
     });
 
