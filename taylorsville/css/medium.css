@@ -63,5 +63,27 @@
         margin: 0 auto;
     }
 
+    .weather-card-bar {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        justify-items: center;
+        text-align: center;
+        background-color: var(--main-bg-color);
+        margin: 0 auto;
+        max-width: 600px;
+    }
+
+    .weather-card {
+        display: block;
+        background-color: var(--forcast-bg-color);
+        margin: 0px 0px 15px 0px;
+        border: 4px ridge var(--border-color);
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .weather-card div:nth-child(2){
+        border-bottom: 1px solid var(--border-color);
+    }
 }
 

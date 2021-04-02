@@ -18,8 +18,10 @@ fetch(weatherURL)
         // get today's weather info
         let forecast = document.getElementById('weather-forecast');
 
-        forecast.innerHTML +=
-`<div class="weather-current">
+        let output =
+`<div class="weather-large">
+<div class="weather-current-div">
+<div class="weather-info">
     <div>
         Today's Weather: ${jsonObject.current.weather[0].description}
     </div>
@@ -30,14 +32,16 @@ fetch(weatherURL)
         Humidity: ${jsonObject.current.humidity}%
     </div>
     <img src="https://openweathermap.org/img/wn/${jsonObject.current.weather[0].icon}@2x.png" alt="${jsonObject.current.weather[0].description}" />
+</div>
 </div>`;
 
+        output += '<div class="weather-card-bar">';
 
         // get the next 3 days
         for (let a = 1; a <= 3; a++) {
             let date = new Date(jsonObject.daily[a].dt * 1000);
 
-            forecast.innerHTML +=
+            output +=
 `
 <div class="weather-card">
     <div>
@@ -55,6 +59,7 @@ fetch(weatherURL)
 </div>
 `;
         }
-
+        output += '</div></div>';
+        forecast.innerHTML += output;
     });
 

@@ -55,7 +55,7 @@
         .events-div div {
             grid-column: 2/3;
             grid-row: 1/2;
-            border: 15px double var(--border-color);
+            border: 10px double var(--border-color);
             background-color: var(--main-bg-color);
         }
         .events-div img {
@@ -68,5 +68,22 @@
             text-align: center;
             padding: 0px;
         }
+
+        .weather-large{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            align-items: center;
+        }
+    .weather-card {
+        margin: 15px 2vw 15px 2vw;
+    }
+    .weather-card-bar {
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content:center;
+        max-width: none;
+        margin-left: 5vw;
+    }
+
+
 }
 
