@@ -49,7 +49,7 @@ fetch(weatherURL)
     <div>
         ${dayName[date.getDay()]}
     </div>
-    <img src="https://openweathermap.org/img/wn/${jsonObject.daily[a].weather[0].icon}@2x.png" alt="${jsonObject.daily[a].weather[0].description}" />
+    <img src="https://openweathermap.org/img/wn/${jsonObject.daily[a].weather[0].icon}@2x.png" alt="${dayName[date.getDay()]} - ${jsonObject.daily[a].weather[0].description}" />
     <div>
         High: ${Math.round(jsonObject.daily[a].temp.max)}&deg;F
     </div>
