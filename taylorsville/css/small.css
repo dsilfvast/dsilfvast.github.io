@@ -248,13 +248,21 @@ nav {
 
 
 
+footer {
+    background-color: var(--segment-heading-bg-color);
+    color: var(--segment-heading-txt-color);
+    width: 100%;
+    height: 40px;
+}
 
-        footer {
-            background-color: var(--segment-heading-bg-color);
-            color: var(--segment-heading-txt-color);
-            width: 100%;
-            height: 40px;
-        }
+.white-link {
+    color: var(--segment-heading-txt-color);
+    text-decoration: underline;
+}
+
+footer a:hover {
+    font-size: 1.1rem;
+}
 
 
 #join-div, #weather-alert-div {

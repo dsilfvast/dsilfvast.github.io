@@ -37,4 +37,3 @@ function closeJoin(ID, delay = 0) {
         elem.parentNode.removeChild(elem);
     }, delay);
 }
-
