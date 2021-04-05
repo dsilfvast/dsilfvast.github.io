@@ -25,8 +25,8 @@ fetch(requestURL)
             website.innerHTML = `<a href="${businesses[i].website}" target="_blank" rel="noopener" title="${businesses[i].name}" >Website</a>`;
             lcode.innerHTML = `<a href="${businesses[i].map}" target="_blank" rel="noopener" title="Map: ${businesses[i].name}" >Map Code: ${businesses[i].lcode}</a>`;
 
-            card.appendChild(h2);
             card.appendChild(image);
+            card.appendChild(h2);
             card.appendChild(address);
             card.appendChild(phone);
             card.appendChild(website);
