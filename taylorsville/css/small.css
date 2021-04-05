@@ -157,6 +157,10 @@ nav {
         font-size: 1.2rem;
     }
 
+.top-div h2 {
+    border-radius: 0px 0px 30px 0px;
+}
+
 .bar {
     background-color: var(--bar-bg-color);
     height: 4px;

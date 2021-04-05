@@ -1,0 +1,68 @@
+{
+  "directory": [
+    {
+      "name": "Chevron",
+      "logo": "chevron.jpg",
+      "address": "5595 S Redwood Rd, Taylorsville, UT 84123",
+      "phone": "(801)261-8657",
+      "website": "http://www.chevronwithtechron.com/findastation.aspx",
+      "lcode": "J3X6+VJ Taylorsville, Utah"
+    },
+    {
+      "name": "Chick-fil-A",
+      "logo": "chick.jpg",
+      "address": "5580 S Redwood Rd, Taylorsville, UT 84123",
+      "phone": "(801)969-6006",
+      "website": "http://www.chick-fil-a.com/taylorsville",
+      "lcode": "M326+65 Taylorsville, Utah"
+    },
+    {
+      "name": "Harmons Grocery",
+      "logo": "harmons.jpg",
+      "address": "5454 S Redwood Rd, Taylorsville, UT 84123",
+      "phone": "(801)967-9213",
+      "website": "http://www.harmonsgrocery.com/",
+      "lcode": "M325+VR Taylorsville, Utah"
+    },
+    {
+      "name": "King Buffet",
+      "logo": "king.jpg",
+      "address": "5668 S Redwood Rd, Taylorsville, UT 84123",
+      "phone": "(801)969-6666",
+      "website": "https://www.woieat.com/king-buffet-taylorsville",
+      "lcode": "J3X5+7P Taylorsville, Utah"
+    },
+    {
+      "name": "Sherwin-Williams Paint Store",
+      "logo": "pain.jpg",
+      "address": "5640 S Redwood Rd, Taylorsville, UT 84123",
+      "phone": "(801)967-8213",
+      "website": "https://www.sherwin-williams.com/store-locator/paint-store/taylorsville/ut/701669?utm_source=google&utm_medium=local_listing&utm_campaign=tag_local_listing",
+      "lcode": "J3X5+JQ Taylorsville, Utah"
+    },
+    {
+      "name": "Target",
+      "logo": "target.jpg",
+      "address": "5800 S Redwood Rd, Taylorsville, UT 84123",
+      "phone": "(385)645-2478",
+      "website": "https://www.target.com/sl/taylorsville/3376",
+      "lcode": "J3W5+CQ Taylorsville, Utah"
+    },
+    {
+      "name": "Texas Roadhouse",
+      "logo": "texas.jpg",
+      "address": "1904 W 5400 S, Taylorsville, UT 84129",
+      "phone": "(801)955-7514",
+      "website": "https://www.texasroadhouse.com/locations/utah/taylorsville",
+      "lcode": "M334+MQ Taylorsville, Utah"
+    },
+    {
+      "name": "Utah Department of Workforce Services",
+      "logo": "dwfs.jpg",
+      "address": "5735 S Redwood Rd, Taylorsville, UT 84123",
+      "phone": "(801)526-0950",
+      "website": "http://jobs.utah.gov/",
+      "lcode": "J3W6+RM Taylorsville, Utah"
+    }
+  ]
+}
