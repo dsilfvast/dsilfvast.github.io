@@ -248,27 +248,43 @@ nav {
         margin-bottom: 15px;
     }
 
-.social-icon {
+.social-bar{
+    margin-bottom: 15px;
+}
+    .social-bar h2 {
+        border-radius: 0px 30px 30px 0px;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin-right: 30px;
+        
+    }
+    .social-bar > .segment-div {
+        grid-template-columns: max-content 60px 60px 60px;
+        justify-items: center;
+        align-items: center;
+    }
+
+.social-link {
     width: 36px;
     height: auto;
     margin: 6px;
 }
 
-    .social-icon:hover {
+    .social-link:hover {
         width: 40px;
         height: auto;
         margin: 4px;
     }
 
-.contact-div, .contact-div-home {
-    display: grid;
-    grid-template-columns: 1fr max-content 1fr;
-    align-items: center;
-    padding: 20px;
-    background-color: var(--event-bg-color)
-}
+    .contact-div {
+        display: grid;
+        grid-template-columns: 1fr max-content 1fr;
+        align-items: center;
+        padding: 20px;
+        background-color: var(--event-bg-color)
+    }
 
-.contact-info, .contact-info-home {
+.contact-info {
     border: 10px double var(--border-color);
     line-height: 1.6rem;
     background-color: var(--main-bg-color);
@@ -276,15 +292,11 @@ nav {
     grid-column: 2/3;
 }
 
-    .contact-info div:nth-child(2), .contact-info-home div:nth-child(2) {
+    .contact-info div:nth-child(2) {
         border-top: 1px solid var(--border-color);
         border-bottom: 1px solid var(--border-color);
         line-height: 2rem;
     }
-
-.contact-div-home {
-    grid-template-columns: 1fr max-content 100px 1fr;
-}
 
 .div-border {
     border: 2px solid var(--border-color);
@@ -382,26 +394,18 @@ footer a:hover {
         margin-bottom: 5px;
     }
 
-
-#directory a{
-    font-weight: 700;
-}
-
-#directory a:hover {
-    font-size: 1.1rem;
-    margin: -20px;
-}
-
-/*
+    /*
         Form styles
     */
-.form-grid {
+
+
+.form-grid{
     display: grid;
     grid-template-columns: 1fr;
     max-width: 800px;
     margin: 0 auto;
     text-align: left;
-    justify-self: center;
+    justify-self:center;
 }
 
 .form-grid label{
@@ -435,7 +439,6 @@ legend div{
 }
 
 .required {
-    font-family: 'Times New Roman', Georgia, serif;
     font-size: 1.4rem;
     color: #8A0000;
 }
@@ -452,25 +455,6 @@ fieldset div:last-child{
     width: 100px;
     margin: 10px;
 }
-
-
-input, textarea, button, select {
-    font-family: 'Times New Roman', Georgia, serif;
-    color: var(--main-txt-color);
-    background-color: var(--main-bg-color);
-    background-clip: padding-box;
-    border: 1px solid var(--border-color);
-    border-radius: .25rem;
-    transition: border-color .25s ease-in-out,box-shadow .25s ease-in-out;
-}
-    input:focus, textarea:focus, select:focus {
-        /* Additional highlight for focused elements */
-        border-color: var(--segment-bg-color);
-        outline: 0;
-        box-shadow: 0 0 0 .2rem rgba(0,123,255,.25);
-    }
-
-
 
 /*
     End of Form styles

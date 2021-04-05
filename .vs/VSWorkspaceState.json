@@ -2,7 +2,7 @@
   "ExpandedNodes": [
     "",
     "\\lesson11",
-    "\\lesson11\\js",
+    "\\lesson11\\prophets",
     "\\lesson9",
     "\\lesson9\\prophets",
     "\\skyblips",
@@ -11,6 +11,6 @@
     "\\taylorsville",
     "\\taylorsville\\js"
   ],
-  "SelectedNode": "\\taylorsville\\js\\modified.js",
+  "SelectedNode": "\\taylorsville\\js\\directory.js",
   "PreviewInSolutionExplorer": false
 }
