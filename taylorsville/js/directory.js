@@ -1,5 +1,5 @@
 // JavaScript source code
-const requestURL = 'json/directory.json';
+const requestURL = 'https://dsilfvast.github.io/taylorsville/json/directory.json';
 fetch(requestURL)
     .then(function (response) {
         return response.json();
