@@ -37,3 +37,8 @@ function closeJoin(ID, delay = 0) {
         elem.parentNode.removeChild(elem);
     }, delay);
 }
+
+function gridview(ID, setClass, removeClass) {
+    document.getElementById(ID).classList.remove(removeClass);
+    document.getElementById(ID).classList.add(setClass);
+}

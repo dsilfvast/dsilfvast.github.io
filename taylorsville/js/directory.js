@@ -14,8 +14,7 @@ fetch(requestURL)
             let address = document.createElement('div');
             let phone = document.createElement('div');
             let website = document.createElement('div');
-            let lcode = document.createElement('div');
-            
+            let lcode = document.createElement('div');     
 
             h2.textContent = businesses[i].name;
             image.setAttribute('src', 'images/logos/' + businesses[i].logo);
@@ -31,6 +30,16 @@ fetch(requestURL)
             card.appendChild(phone);
             card.appendChild(website);
             card.appendChild(lcode);
+
+            image.classList.add('item1')
+            h2.classList.add('item2')
+            address.classList.add('item3')
+            phone.classList.add('item4')
+            website.classList.add('item5')
+            lcode.classList.add('item6')
+
+            card.classList.add('flex-gap');
             document.getElementById('directory').appendChild(card);
+            document.getElementById('directory').classList.add('card-grid-view');
         }
     });

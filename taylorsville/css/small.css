@@ -18,6 +18,7 @@
     --segment-bg-color: #d9e9cd;
     --event-bg-color: #bcd8a6;
     --forcast-bg-color: #d9e9cd;
+    --directory-bg-color: #bcd8a6;
 }
 
 body {
@@ -60,7 +61,7 @@ header a {
 }
 
     .headings h1 {
-        font-size: 1.6em;
+        font-size: 1.4em;
         margin: 0 0 0 17px;
     }
     .headings div {
@@ -68,7 +69,7 @@ header a {
     }
 
 #title-bar > picture > img {
-    height: 60px;
+    height: 55px;
     margin-left: 15px;
 }
 
@@ -355,23 +356,83 @@ footer a:hover {
     padding: 5px;
 }
 
-.x-out {
-    position: absolute;
-    border: 2px solid var(--border-color);
-    top: 5px;
-    right: 5px;
-    padding: 2px 6px 2px 6px;
-    border-radius: 5px;
-    background-color: var(--alert-x-bg-color);
-    color: var(--alert-x-txt-color);
-    line-height: 20px;
+/*
+    directory.html
+*/
+
+.card-grid-view, .card-list-view {
+    background-color: var(--directory-bg-color);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 15px;
 }
 
-.hidden{
-    visibility:hidden;
+#directory > section {
+    font-family: 'Times New Roman', Georgia, serif;
+    border: 1px solid var(--border-color);
+    background-color: var(--segment-bg-color);
+    max-width: 380px;
+    padding: 10px 15px 10px 15px;
+    justify-self: center;
 }
 
+        #directory > section > img {
+            max-width: 95%;
+            height: auto;
+        }
 
+        #directory > section > h2 {
+            margin: 0px 0px 5px 0px;
+            padding: 0px;
+        }
+
+    #directory > section > div {
+        border-top: 1px solid var(--border-color);
+        padding-top: 5px;
+        margin-bottom: 5px;
+    }
+
+
+
+
+
+
+
+
+        .x-out {
+            position: absolute;
+            border: 2px solid var(--border-color);
+            top: 5px;
+            right: 5px;
+            padding: 2px 6px 2px 6px;
+            border-radius: 5px;
+            background-color: var(--alert-x-bg-color);
+            color: var(--alert-x-txt-color);
+            line-height: 20px;
+        }
+
+.hidden {
+    visibility: hidden;
+}
+
+.view-changer {
+    display: none;
+}
+
+    .view-changer img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .view-changer button {
+        background-color: var(--main-bg-color);
+        border-radius: 10px;
+    }
+        .view-changer button:hover {
+            background-color: var(--hover-bg-color);
+        }
 
 
 

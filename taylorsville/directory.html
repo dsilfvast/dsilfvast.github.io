@@ -47,10 +47,19 @@
         <section>
             <div class="segment-div top-div">
                 <h2>Business Directory</h2>
+                <div class="view-changer">
+                    <button onclick="gridview('directory','card-grid-view','card-list-view')">
+                        <img src="images/gridview.png" alt="Grid View" />
+                    </button>
+                    <button onclick="gridview('directory','card-list-view','card-grid-view')">
+                        <img src="images/listview.png" alt="List View" />
+                    </button>
+                </div>
             </div>
+            
         </section>
         <div id="directory">
-
+            
         </div>
 </main>
     <footer onload="getModifiedDate()">
