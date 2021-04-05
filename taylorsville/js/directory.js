@@ -18,12 +18,12 @@ fetch(requestURL)
             
 
             h2.textContent = businesses[i].name;
-            image.setAttribute('src', businesses[i].logo);
+            image.setAttribute('src', 'images/logos/' + businesses[i].logo);
             image.setAttribute('alt', businesses[i].name + ' Logo');
             address.innerHTML = "Location:<br />" + businesses[i].address;
             phone.textContent = "Phone: " + businesses[i].phone;
             website.innerHTML = `<a href="${businesses[i].website}" target="_blank" rel="noopener" title="${businesses[i].name}" >Website</a>`;
-            lcode.innerHTML = `<a href="${businesses[i].map}" target="_blank" rel="noopener" title="Map: ${businesses[i].name}" >Map: ${businesses[i].lcode}</a>`;
+            lcode.innerHTML = `<a href="${businesses[i].map}" target="_blank" rel="noopener" title="Map: ${businesses[i].name}" >Map Code: ${businesses[i].lcode}</a>`;
 
             card.appendChild(h2);
             card.appendChild(image);

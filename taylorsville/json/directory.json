@@ -2,7 +2,7 @@
   "directory": [
     {
       "name": "Chevron",
-      "logo": "chevron.jpg",
+      "logo": "chevron.png",
       "address": "5595 S Redwood Rd, Taylorsville, UT 84123",
       "phone": "(801)261-8657",
       "website": "http://www.chevronwithtechron.com",
@@ -11,7 +11,7 @@
     },
     {
       "name": "Chick-fil-A",
-      "logo": "chick.jpg",
+      "logo": "chick.png",
       "address": "5580 S Redwood Rd, Taylorsville, UT 84123",
       "phone": "(801)969-6006",
       "website": "http://www.chick-fil-a.com",
@@ -21,7 +21,7 @@
     },
     {
       "name": "Harmons Grocery",
-      "logo": "harmons.jpg",
+      "logo": "harmons.png",
       "address": "5454 S Redwood Rd, Taylorsville, UT 84123",
       "phone": "(801)967-9213",
       "website": "http://www.harmonsgrocery.com/",
@@ -30,7 +30,7 @@
     },
     {
       "name": "King Buffet",
-      "logo": "king.jpg",
+      "logo": "king.png",
       "address": "5668 S Redwood Rd, Taylorsville, UT 84123",
       "phone": "(801)969-6666",
       "website": "https://www.woieat.com/king-buffet-taylorsville",
@@ -39,7 +39,7 @@
     },
     {
       "name": "Sherwin-Williams Paint Store",
-      "logo": "pain.jpg",
+      "logo": "pain.png",
       "address": "5640 S Redwood Rd, Taylorsville, UT 84123",
       "phone": "(801)967-8213",
       "website": "https://www.sherwin-williams.com",
@@ -48,7 +48,7 @@
     },
     {
       "name": "Target",
-      "logo": "target.jpg",
+      "logo": "target.png",
       "address": "5800 S Redwood Rd, Taylorsville, UT 84123",
       "phone": "(385)645-2478",
       "website": "https://www.target.com",
@@ -57,7 +57,7 @@
     },
     {
       "name": "Texas Roadhouse",
-      "logo": "texas.jpg",
+      "logo": "texas.png",
       "address": "1904 W 5400 S, Taylorsville, UT 84129",
       "phone": "(801)955-7514",
       "website": "https://www.texasroadhouse.com",
@@ -66,7 +66,7 @@
     },
     {
       "name": "Utah Department of Workforce Services",
-      "logo": "dwfs.jpg",
+      "logo": "dwfs.png",
       "address": "5735 S Redwood Rd, Taylorsville, UT 84123",
       "phone": "(801)526-0950",
       "website": "http://jobs.utah.gov/",
