@@ -438,9 +438,11 @@ legend div{
     width: 100%;
 }
 
+/*
 fieldset div:last-child{
     text-align:right;
 }
+*/
 
 fieldset > fieldset{
     margin: 0px;
@@ -586,3 +588,6 @@ textarea {
     margin-top: -15px;
 }
 
+.text-right{
+    text-align: right;
+}
