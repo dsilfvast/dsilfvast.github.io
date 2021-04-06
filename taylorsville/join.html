@@ -48,9 +48,119 @@
                 <h2>Become a Member</h2>
             </div>
         </section>
-
-
-
+        <form action="thanks.html" name="contactus" target="_self" method="get" class="form-grid">
+            <fieldset>
+                <legend>Membership Application</legend>
+                <div>
+                    <label for="fname" id="fname-label">
+                        <span class="required">*</span>First Name:<br />
+                        <input type="text" id="fname" name="fname" pattern="[a-zA-Z-.'\s]{2,}" autofocus required />
+                    </label>
+                </div>
+                <div>
+                    <label for="lname" id="lname-label">
+                        <span class="required">*</span>Last Name:<br />
+                        <input type="text" id="lname" name="lname" pattern="[a-zA-Z-.'\s]{2,}" required />
+                    </label>
+                </div>
+                <div>
+                    <label for="title" id="title-label">
+                        <span class="required">&nbsp;&nbsp;</span>Title:<br />
+                        <input id="title" name="title" list="title-list" />
+                        <datalist id="title-list">
+                            <option value="Mr."> Mr.</option>
+                            <option value="Mrs."> Mrs.</option>
+                            <option value="Ms."> Ms.</option>
+                            <option value="Dr."> Dr.</option>
+                        </datalist>
+                    </label>
+                </div>
+                <div>
+                    <label for="email" id="email-label">
+                        <span class="required">*</span>E-mail:<br />
+                        <input type="text" id="email" name="email" placeholder="name@example.com" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required />
+                    </label>
+                </div>
+                <div>
+                    <label for="phone" id="phone-label">
+                        <span class="required">&nbsp;&nbsp;</span>Cell Phone:<br />
+                        <input type="tel" id="phone" name="phone" placeholder="###-###-###" pattern="[0-9\+\- ]{0,4}[(]?[0-9]{3}[)\- ]?[0-9]{3}[- ]?[0-9]{4}" />
+                    </label>
+                </div>
+                <fieldset>
+                    <legend>Business Information</legend>
+                    <div>
+                        <label for="bname" id="bname-label">
+                            <span class="required">*</span>Business Name:<br />
+                            <input type="text" id="bname" name="bname" pattern="[a-zA-Z0-9-.'\s]{2,}" required />
+                        </label>
+                    </div>
+                    <div>
+                        <label for="baddress" id="baddress-label">
+                            <span class="required">&nbsp;&nbsp;</span>Business Address:<br />
+                            <input type="text" id="baddress" name="baddress" pattern="[a-zA-Z-.'\s]{2,}" />
+                        </label>
+                    </div>
+                    <div>
+                        <label for="website" id="website-label">
+                            <span class="required">&nbsp;&nbsp;</span>Business Website:<br />
+                            <input type="text" id="website" name="website" pattern=".{2,}" />
+                        </label>
+                    </div>
+                    <div>
+                        <label for="about" id="comment-label">
+                            <span class="required">&nbsp;&nbsp;</span>Business Description:<br />
+                            <textarea id="about" name="about" rows="4"></textarea><br />
+                        </label>
+                    </div>
+                    <div></div>
+                </fieldset>
+                <fieldset class="margin-up">
+                    <legend>Choose Membership Level</legend>
+                    <div class="member-level-grid">
+                        <div>
+                            <div class="member-level-div">
+                                <input type="radio" id="level-100" name="membership" value="100" required />
+                                <label for="level-100">Non-profit<br />$100</label>
+                            </div>
+                            <p>Non-profit organizations will receive a framed certificate of membership and a subscription to our
+                            weekly newsletter. You will also receive access to our online membership directory.</p>
+                        </div>
+                        <div>
+                            <div class="member-level-div">
+                                <input type="radio" id="level-200" name="membership" value="200" />
+                                <label for="level-200">Bronze<br />$200</label>
+                            </div>
+                            <p>Bronze members will also have access to our partnered member discounts and
+                            promotional offers. Event listings can also be published online an in our newsletter.</p>
+                        </div>
+                        <div>
+                            <div class="member-level-div">
+                                <input type="radio" id="level-400" name="membership" value="400" />
+                                <label for="level-400">Silver<br />$400</label>
+                            </div>
+                            <p>Silver members will also have local newspaper articles submitted for ribbon
+                            cuttings, and business opening events. Marketing opportunities and educational
+                            material will also be provided.</p>
+                        </div>
+                        <div>
+                            <div class="member-level-div">
+                                <input type="radio" id="level-1000" name="membership" value="1000" />
+                                <label for="level-1000">Gold<br />$1000</label>
+                            </div>
+                            <p>Gold members get everything plus invitations to our luncheon events to network
+                            with our most prominent community leaders. Gold members will also be promoted to
+                            our organization’s Board of Governors with a featured listing that prominently
+                            highlights your business and services.</p>
+                        </div>
+                    </div>
+                    <div></div>
+                </fieldset>
+                <div>
+                    <input type="submit" id="submit" value="Join" />
+                </div>
+            </fieldset>
+        </form>
     </main>
     <footer onload="getModifiedDate()">
         <div>
