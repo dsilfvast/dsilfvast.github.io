@@ -532,6 +532,18 @@ textarea {
 /*
     End of Form styles
 */
+
+.thanks-msg{
+    background-color: var(--segment-bg-color);
+}
+
+.thanks-msg div{
+    max-width: 600px;
+    background-color: var(--main-bg-color);
+    margin: 0 auto;
+}
+
+
 .x-out {
     position: absolute;
     border: 2px solid var(--border-color);
