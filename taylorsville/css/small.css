@@ -523,6 +523,12 @@ input, #submit, select {
     padding-right: 10px;
 }
 
+textarea {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
 /*
     End of Form styles
 */
