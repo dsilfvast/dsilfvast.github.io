@@ -467,7 +467,7 @@ fieldset div:last-child{
 }
 */
 
-fieldset > fieldset{
+fieldset fieldset {
     margin: 0px;
     text-align: center;
 }
@@ -545,6 +545,12 @@ input, #submit, select {
     font-size: 1.4rem;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+select {
+    border-width: 2px;
+    border-style: inset;
+    height:36px;
 }
 
 textarea {
