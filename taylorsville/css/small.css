@@ -699,3 +699,44 @@ table, td, th {
     height: 1px;
     visibility: hidden;
 }
+
+/*
+*   Resources page
+*/
+.resource-list-div{
+    background-color: var(--bar-bg-color);
+    padding: 25px;
+}
+.resource-list {
+    border: 10px double var(--border-color);
+    background-color: var(--main-bg-color);
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+.resource-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    padding: 10px;
+    margin-top: -1px;
+}
+    .resource-grid img{
+        max-width: 95%;
+        height: auto;
+    }
+
+    .resource-grid div:first-child {
+        text-align: left;
+        justify-self: left;
+        padding-left: 15px;
+    }
+
+.resource-text {
+    grid-template-columns: 1fr;
+    align-items: start;
+}
