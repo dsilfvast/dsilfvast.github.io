@@ -388,6 +388,15 @@ footer a:hover {
     margin: -20px;
 }
 
+.join-intro{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.join-intro h3{
+    text-align: left;
+    margin-left:25px;
+}
 /*
         Form styles
 */
