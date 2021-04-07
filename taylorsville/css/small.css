@@ -413,10 +413,22 @@ footer a:hover {
     font-size: 1.2rem;
 }
 
-.form-grid input{
-    margin-bottom:15px;
-    margin-left:10px;
-    width: 240px;
+    .form-grid input {
+        margin-bottom: 15px;
+        margin-left: 10px;
+        width: 240px;
+    }
+    .form-grid select {
+        margin-bottom: 15px;
+        margin-left: 10px;
+        width: 100px;
+    }
+#bzip{
+    width: 70px;
+}
+
+.business-address {
+    padding-left: 30px;
 }
 
 legend {
@@ -514,7 +526,6 @@ input, textarea, button, select {
     color: var(--main-txt-color);
     background-color: var(--main-bg-color);
     background-clip: padding-box;
-    border: 1px solid var(--border-color);
     border-radius: .25rem;
     transition: border-color .25s ease-in-out,box-shadow .25s ease-in-out;
 }
