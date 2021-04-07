@@ -601,7 +601,7 @@ table {
     flex: auto;
 }
 
-table, td {
+table, td, th {
     border: 1px solid var(--border-color);
     border-collapse: collapse;
     padding: 10px;
