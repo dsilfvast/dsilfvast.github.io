@@ -1,6 +1,8 @@
 ﻿:root {
     --main-bg-color: white;
     --main-txt-color: black;
+    --header-bg-color: #65a1bb;
+    --header-txt-color: black;
     --alert-bg-color: #C98B83;
     --alert-txt-color: black;
     --alert-x-bg-color: white;
@@ -44,15 +46,15 @@ a {
     color: var(--link-txt-color);
 }
 
-header a {
-    background-color: var(--main-bg-color);
-    padding: 5px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: black;
-    text-decoration-line: none;
-}
+    header a {
+        background-color: var(--header-bg-color);
+        padding: 5px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black;
+        text-decoration-line: none;
+    }
 
 .headings {
     display: flex;
