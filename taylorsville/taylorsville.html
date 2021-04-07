@@ -10,6 +10,7 @@
 
     <script src="js/scripts.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" defer></script>
+    <script src="js/lazy.js"></script>
     <script src="js/font.js" defer></script>
     <script src="js/modified.js" defer></script>
 
@@ -48,9 +49,146 @@
                 <h2>About Taylorsville</h2>
             </div>
         </section>
+        <div>
+            <div class="about-city">
+                <img class="city-logo" src="images/cityname.jpg" alt="City name and logo." />
+            </div>
+            <div class="about-city-div">
+                <img class="float-right" data-src="images/city1.jpg" src="images/placeholder.png" alt="City Marker" width="400" height="300" />
+                <p>
+                    The City of Taylorsville was incorporated on July 1, 1996, through the grassroots efforts of citizens who developed a vision that would provide greater local control of community planning, economic development and municipal service delivery. Today, more than 20 years later, the city continues to build on that foundation while keeping eyes keenly focused on the future.
+                </p>
 
+                <p>
+                    To that end, the city has rolled out a “20/20 Vision” for the Year 2020 and beyond. That vision focuses on new business and economic growth taking place across the city, as well as development opportunities and projects on the horizon. It includes efforts to bring new business and housing to the city, plans for prime development locations, transportation and land use.
+                </p>
+                <img class="float-left" data-src="images/city3.jpg" src="images/placeholder.png" alt="City from the sky." width="400" height="267" />
+                <p>
+                    The quality of life in Taylorsville is high with many cultural and recreational activities available within the city or nearby. The city values its reputation as a well-maintained residential and business community. Taylorsville is proud of the stunning scenic backdrop provided by the Wasatch Mountains to the east and Oquirrh Mountains to the west. A river also runs through it; the Jordan River, with its bike and walking trails and beautiful natural habitat, is without question a prize gem of the city.
+                </p>
+                <p>
+                    Residents of Taylorsville place a high value on the natural element of the Jordan River corridor, as well as the open spaces and parks that dot the area. Among them is the large Valley Regional Park, home to the popular Taylorsville Dayzz, the city’s annual summer celebration that draws thousands of people each year for carnival rides, a parade, entertainment and fireworks. A bustling suburb of Utah’s Capital, Taylorsville represents a balance of homes, businesses and thriving commercial areas.
+                </p>
+                <div>
+                    <img data-src="images/city2.jpg" src="images/placeholder.png" alt="City Celebration" width="600" height="416" />
+                </div>
+            </div>
 
+        </div>
 
+        <section>
+            <div class="segment-div">
+                <h2>Demographics</h2>
+            </div>
+        </section>
+        <div class="demographics">
+            <h3>Taylorsville Demographics (2018)</h3>
+            <div>
+                <table>
+                    <tbody class="table-left">
+                        <tr class="table-group">
+                            <td colspan="2">Our People</td>
+                        </tr>
+                        <tr>
+                            <td>Population</td>
+                            <td>61,233</td>
+                        </tr>
+                        <tr>
+                            <td>Median&nbsp;Age</td>
+                            <td>33.3</td>
+                        </tr>
+                        <tr>
+                            <td>Households</td>
+                            <td>20,372</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table>
+                    <tbody class="table-left">
+                        <tr class="table-group">
+                            <td colspan="2">Education</td>
+                        </tr>
+                        <tr>
+                            <td>Bachelor's&nbsp;or&nbsp;equiv.</td>
+                            <td>23%</td>
+                        </tr>
+                        <tr>
+                            <td>Some&nbsp;College</td>
+                            <td>39%</td>
+                        </tr>
+                        <tr>
+                            <td>High&nbsp;School</td>
+                            <td>29%</td>
+                        </tr>
+                        <tr>
+                            <td>No&nbsp;High&nbsp;School</td>
+                            <td>10%</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table>
+                    <tbody class="table-left">
+                        <tr class="table-group">
+                            <td colspan="2">Income</td>
+                        </tr>
+
+                        <tr>
+                            <td>Median&nbsp;Household&nbsp;Income</td>
+                            <td>$62,496</td>
+                        </tr>
+                        <tr>
+                            <td>Median&nbsp;Net&nbsp;Worth</td>
+                            <td>$125,964</td>
+                        </tr>
+                        <tr>
+                            <td>Median&nbsp;Disposable&nbsp;Income</td>
+                            <td>$51,478</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table>
+                    <tbody class="table-left">
+                        <tr class="table-group">
+                            <td colspan="2">Employment</td>
+                        </tr>
+                        <tr>
+                            <td>White&nbsp;Collar</td>
+                            <td>63%</td>
+                        </tr>
+                        <tr>
+                            <td>Blue&nbsp;Collar</td>
+                            <td>24%</td>
+                        </tr>
+                        <tr>
+                            <td>Services</td>
+                            <td>13%</td>
+                        </tr>
+                        <tr>
+                            <td>Unemployed</td>
+                            <td>4.1%</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table>
+                    <tbody class="table-left">
+                        <tr class="table-group">
+                            <td colspan="2">Business</td>
+                        </tr>
+                        <tr>
+                            <td>Total&nbsp;Businesses</td>
+                            <td>1,012</td>
+                        </tr>
+                        <tr>
+                            <td>Employees</td>
+                            <td>17,692</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <img onload="enableLazyLoading()" id="placeholder-cache" src="images/placeholder.png" alt="hidden" />
+        </div>
+        
     </main>
     <footer onload="getModifiedDate()">
         <!-- join announcement-->

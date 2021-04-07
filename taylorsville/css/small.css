@@ -535,7 +535,45 @@ textarea {
     End of Form styles
 */
 
-.thanks-msg{
+
+.about-city{
+    max-width: 100%;
+}
+.about-city img{
+    max-width: 100%;
+    height: auto;
+
+}
+
+.about-city-div {
+    background-color: var(--segment-bg-color);
+    padding-bottom: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    border: 2px solid var(--border-color);
+}
+.about-city-div p {
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+    .about-city-div img {
+        max-width: 95%;
+        height: auto;
+        margin: 25px 0px 0px 0px;
+        border: 1px solid var(--border-color);
+        box-shadow: 0 0 15px 10px var(--directory-bg-color);
+    }
+
+.city-logo {
+    margin: 25px 0px 25px 0px;
+}
+
+
+
+
+.thanks-msg {
     background-color: var(--segment-bg-color);
 }
 
@@ -543,6 +581,40 @@ textarea {
     max-width: 600px;
     background-color: var(--main-bg-color);
     margin: 0 auto;
+}
+
+
+.demographics {
+    background-color: var(--event-bg-color);
+    max-width: 100%;
+    padding: 25px;
+}
+
+    .demographics div{
+        display: flex;
+        flex: auto;
+        flex-wrap: wrap;
+    }
+
+table {
+    margin: 25px;
+    flex: auto;
+}
+
+table, td {
+    border: 1px solid var(--border-color);
+    border-collapse: collapse;
+    padding: 10px;
+    background-color: var(--main-bg-color);
+}
+
+.table-group{
+    text-align: center;
+    font-weight: 700;
+}
+
+.table-left {
+    text-align: left;
 }
 
 
@@ -590,4 +662,12 @@ textarea {
 
 .text-right{
     text-align: right;
+}
+
+/* Used to load a placeholder before lazy loading executes*/
+#placeholder-cache {
+    display: inline;
+    width: 1px;
+    height: 1px;
+    visibility: hidden;
 }

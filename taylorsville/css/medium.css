@@ -159,5 +159,20 @@
         max-width: unset;
     }
 
+
+    .about-city-div img {
+        margin: 25px;
+    }
+
+    .float-right {
+        float: right;
+        margin: 25px;
+    }
+
+    .float-left {
+        float: left;
+        margin: 25px;
+    }
+
 }
 
